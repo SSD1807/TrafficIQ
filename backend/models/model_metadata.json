@@ -1,0 +1,83 @@
+{
+  "project": "Traffic Bottleneck Prediction and Smart Routing System",
+  "schema_version": "2.0",
+  "model_type": "30-minute-ahead congestion classification",
+  "selected_model": "Random Forest",
+  "model_selection_rule": "Highest validation macro-F1 among Random Forest and XGBoost; persistence baseline is comparator only",
+  "target": "Congestion label observed at the next consecutive 30-minute interval for the same location",
+  "target_column": "target_congestion_label",
+  "classes": {
+    "0": "Low",
+    "1": "Medium",
+    "2": "High"
+  },
+  "features": [
+    "location",
+    "prediction_hour",
+    "prediction_day_of_week",
+    "prediction_is_weekend",
+    "prediction_is_rush_hour",
+    "prediction_is_night",
+    "prediction_hour_sin",
+    "prediction_hour_cos",
+    "prediction_dow_sin",
+    "prediction_dow_cos",
+    "lag_vehicle_count",
+    "lag_avg_speed",
+    "lag_rainfall",
+    "lag_clouds",
+    "lag_temperature"
+  ],
+  "categorical_features": [
+    "location"
+  ],
+  "numeric_features": [
+    "prediction_hour",
+    "prediction_day_of_week",
+    "prediction_is_weekend",
+    "prediction_is_rush_hour",
+    "prediction_is_night",
+    "prediction_hour_sin",
+    "prediction_hour_cos",
+    "prediction_dow_sin",
+    "prediction_dow_cos",
+    "lag_vehicle_count",
+    "lag_avg_speed",
+    "lag_rainfall",
+    "lag_clouds",
+    "lag_temperature"
+  ],
+  "excluded_contemporaneous_fields": [
+    "vehicle_count",
+    "avg_speed",
+    "rainfall",
+    "clouds",
+    "temperature",
+    "congestion_label"
+  ],
+  "persistence_baseline": "predict target label = current_congestion_label at prediction origin; not supplied to the learned classifier",
+  "split_strategy": "Chronological split by prediction_timestamp; all locations at a timestamp stay in one partition",
+  "split_fractions": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "train_rows": 24490,
+  "validation_rows": 5240,
+  "test_rows": 5260,
+  "train_end": "2023-02-21 00:30:00",
+  "validation_end": "2023-03-03 22:30:00",
+  "test_start": "2023-03-03 23:00:00",
+  "test_end": "2023-03-14 21:30:00",
+  "random_state": 42,
+  "dataset_source": "dataset/processed_bhubaneswar_traffic.csv",
+  "dataset_domain": "Synthetic Bhubaneswar; not real-world observed traffic",
+  "runtime_versions": {
+    "python": "3.12.3",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "scikit_learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  }
+}

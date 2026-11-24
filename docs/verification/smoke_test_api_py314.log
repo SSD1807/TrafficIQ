@@ -1,0 +1,30 @@
+PASS health 200 + classifier + forecast artifacts  [version=2.0.0]
+PASS CORS header for frontend origin  [http://127.0.0.1:5173]
+PASS CORS pre-flight for POST /routes/calculate
+PASS locations (10)
+PASS traffic/current is labelled not-live
+PASS traffic/predictions (10, classes valid)
+PASS predict one location (probabilities sum ~1)  [Random Forest]
+PASS forecast +30min random_forest  [speed=68.1]
+PASS forecast +30min xgboost  [speed=67.5]
+PASS forecast +60min random_forest  [speed=67.4]
+PASS forecast +60min xgboost  [speed=67.4]
+PASS routing/nodes use latitude/longitude  [graph_source=synthetic_fallback nodes=8]
+PASS route dijkstra with alternatives  [routes=3 dist=1.65km]
+PASS route astar with alternatives  [routes=3 dist=1.65km]
+PASS dijkstra and A* agree on best travel time
+PASS validator rejects two endpoint pairs (422)
+PASS route by coordinates
+PASS incident create (201)  [95aac98e]
+PASS dynamic rerouting around incident  [['1', '3', '8'] -> ['1', '5', '8']]
+PASS incident delete (200)
+PASS incident delete again (404)
+PASS weather endpoint honest status  [status=unavailable]
+PASS weather simulated fallback is labelled
+PASS tomtom endpoint responds (disabled/unavailable without key)  [status=disabled]
+PASS copilot answers from tools  [mode=rule_based]
+PASS models/evaluation (saved artifacts)
+PASS openapi.json served  [17 paths]
+
+27/27 checks passed
+SMOKE_EXIT=0

@@ -1,0 +1,1 @@
+{"status":"unavailable","source":"none","is_live":false,"is_simulated":false,"error":"ConnectError: [Errno -3] Temporary failure in name resolution","message":"Open-Meteo is unavailable and simulated fallback was not enabled."}

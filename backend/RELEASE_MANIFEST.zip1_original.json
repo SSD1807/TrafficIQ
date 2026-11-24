@@ -1,0 +1,1031 @@
+{
+  "project": "Traffic Bottleneck Prediction & Smart Routing System",
+  "release_type": "v3_final_pinned_verified",
+  "release_date": "2026-11-10",
+  "file_count_excluding_manifest": 203,
+  "excluded_by_design": [
+    "RELEASE_MANIFEST.json (self-referential)",
+    "__pycache__/",
+    ".pytest_cache/",
+    "cache/ (downloaded OSM graph)",
+    ".env"
+  ],
+  "honesty_statement": "Synthetic-data demonstrator. Not a live Bhubaneswar traffic system. TomTom-to-edge routing is verified only against mocked responses; real OSM download, live Open-Meteo, TomTom, OpenAI and Windows/Python 3.14 execution are unverified. See FEATURE_STATUS.md.",
+  "files": [
+    {
+      "path": ".env.example",
+      "size_bytes": 368,
+      "sha256": "816bd19617e8d89ad8f747ca13c4f3871db64ade5f2b12e6766cfdc92af2efa8"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 202,
+      "sha256": "527bf12985f45f616b585299f37c63177a56f106d34a064137c10f947f8d9d98"
+    },
+    {
+      "path": ".streamlit/config.toml",
+      "size_bytes": 133,
+      "sha256": "bc0f0f44afeb63d560d4556a93cbfec589736cf8f35ffeebe57e782f4c737c43"
+    },
+    {
+      "path": "API_TEST_RESULTS.md",
+      "size_bytes": 4807,
+      "sha256": "60a90cfaeb8e2db31f0334f26a6e20fe5b85359679e857dffdd3499a418bacec"
+    },
+    {
+      "path": "DASHBOARD_V3_GUIDE.md",
+      "size_bytes": 3735,
+      "sha256": "bfe0f6a31a48ea48ebd35c3687234db6a01c3784229db8e546802f08489c1051"
+    },
+    {
+      "path": "DEPLOYMENT_READINESS_REPORT.md",
+      "size_bytes": 8184,
+      "sha256": "1aedc4fcbd8ccbe9d2144c88b6799d4571c3de9328e77fd1149155c32aa9cbab"
+    },
+    {
+      "path": "Dockerfile",
+      "size_bytes": 432,
+      "sha256": "dabd17619a1fa3a6a160a1e960b1bb817eceb7ab63d23bf1993702e1cdb46570"
+    },
+    {
+      "path": "FEATURE_STATUS.md",
+      "size_bytes": 7050,
+      "sha256": "e3cc94a4731f63f5409206127307088f828c0b7fcf6b152d5f62eeb58da86317"
+    },
+    {
+      "path": "FORECASTING_REPORT.md",
+      "size_bytes": 5390,
+      "sha256": "33a60fe468673d15760f95b2addcf55c599d06603b54f984b709c08fd3a411a2"
+    },
+    {
+      "path": "INTEGRATION_AUDIT.md",
+      "size_bytes": 11503,
+      "sha256": "2520dac9e0564443a8ea7bb262996f485329837ba36f933edd35c7ec315cce31"
+    },
+    {
+      "path": "PHASE1_ML_REPORT.md",
+      "size_bytes": 5103,
+      "sha256": "917060c9e9efe816b095465fad889a3966f1dc386983457dfe4d6c57d67414ec"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 17175,
+      "sha256": "410fb43a06a071dcb6b527a60e2275fe6dda93b4caaac854f5160035eac0d09f"
+    },
+    {
+      "path": "ROUTING_TEST_RESULTS.md",
+      "size_bytes": 2992,
+      "sha256": "aa6df1876a6a5696a3bf1b2cd49a60eac6bf66adf74fa338c0f31adc742cbd49"
+    },
+    {
+      "path": "TECHNICAL_AUDIT.md",
+      "size_bytes": 15040,
+      "sha256": "ca2ae0e0152cf96f1ea8e4e159fe8e9b718266cf274a746a4193dce4ca9dd570"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "size_bytes": 3617,
+      "sha256": "5a2857e953cfdafe63e6574afedd47ea7577e6733378cfc36be0942121c6604f"
+    },
+    {
+      "path": "WINDOWS_STARTUP.md",
+      "size_bytes": 7171,
+      "sha256": "8f2549eba73987b34b788cb80305334862593c6ac1261901c77e852ab63455dd"
+    },
+    {
+      "path": "animation_component.py",
+      "size_bytes": 30020,
+      "sha256": "2c0eefeddd9894346a5f3146aaaf080f910d169804ab2a04e1b99fea4578c724"
+    },
+    {
+      "path": "backend/__init__.py",
+      "size_bytes": 35,
+      "sha256": "45390889d8a4a81a685fa8f8fb38422e5f6ff8840d7df1405f088ab5347ae8e2"
+    },
+    {
+      "path": "backend/dependencies.py",
+      "size_bytes": 1801,
+      "sha256": "31a3c7a1912f3a0f947247e33d756d2c890f16e66ef2879a4c1d6952005eaad0"
+    },
+    {
+      "path": "backend/main.py",
+      "size_bytes": 12588,
+      "sha256": "3796d99f4aceacde0ae71bac201d1557660cfb851360117695d08e47cc4a72a9"
+    },
+    {
+      "path": "backend/schemas/__init__.py",
+      "size_bytes": 49,
+      "sha256": "e443c1b3c4ac55b715a85b2b821c547764806fee09cc957417b7ad206b93fc48"
+    },
+    {
+      "path": "backend/schemas/api.py",
+      "size_bytes": 2609,
+      "sha256": "904093b08f7d23a21e481c98bce370f871208c2f64fd961d8d0774b2f961bb40"
+    },
+    {
+      "path": "bhubaneswar_synthetic_traffic.csv",
+      "size_bytes": 2339335,
+      "sha256": "3c6eb6136a7674a70aeaa0a926508db776bb56cfb1a0655dcb01d1f3fa56c4c1"
+    },
+    {
+      "path": "clean_traffic.csv",
+      "size_bytes": 2055483,
+      "sha256": "bad13cf8facafbf3969c7b5af06199c24805422ff5f97916ea3201b4c92d1547"
+    },
+    {
+      "path": "config/location_coordinates.json",
+      "size_bytes": 1306,
+      "sha256": "2a304d76dfd3103c46137cb2e1cdd3c8383239e3b963c9ef44a105e323a8ed90"
+    },
+    {
+      "path": "copilot/__init__.py",
+      "size_bytes": 37,
+      "sha256": "2c12dd43e094fabff32a5206360be94314778b72736d6a2553c89b99d5638b0e"
+    },
+    {
+      "path": "copilot/agent.py",
+      "size_bytes": 11509,
+      "sha256": "e146c2e1d61fb569a098254f7f70663d4bd16f12bd572115b0c38bb773f434fc"
+    },
+    {
+      "path": "dashboard.py",
+      "size_bytes": 2223,
+      "sha256": "773dbdbb31b33e75f1783d6764a73d3cb10e1adea90e285522b0f38d5142c2bd"
+    },
+    {
+      "path": "dashboard_legacy.py",
+      "size_bytes": 30218,
+      "sha256": "0c7f63733e51986c3986f43e6b71880dd920654551444815f1fa4859afbdab74"
+    },
+    {
+      "path": "dashboard_v1.py",
+      "size_bytes": 16804,
+      "sha256": "74fdadc37aa8a3eb6eeb6745d4903ea966e953b30861b0a4adfdb9da041632de"
+    },
+    {
+      "path": "dataset/Metro_Interstate_Traffic_Volume.csv",
+      "size_bytes": 2856851,
+      "sha256": "8831604e6ea6e6b737fce013fc1f99108e806fba5b42db59eb84bd44b769f0c8"
+    },
+    {
+      "path": "dataset/bhubaneswar_synthetic_traffic.csv",
+      "size_bytes": 2339335,
+      "sha256": "3c6eb6136a7674a70aeaa0a926508db776bb56cfb1a0655dcb01d1f3fa56c4c1"
+    },
+    {
+      "path": "dataset/clean_traffic.csv",
+      "size_bytes": 5018959,
+      "sha256": "5f07dbca4ad0bd40b24bf1afbd874f0f7f6de33d1ba26ea81d4bb560b4ebc344"
+    },
+    {
+      "path": "dataset/merged_traffic.csv",
+      "size_bytes": 2055483,
+      "sha256": "bad13cf8facafbf3969c7b5af06199c24805422ff5f97916ea3201b4c92d1547"
+    },
+    {
+      "path": "dataset/processed_bhubaneswar_traffic.csv",
+      "size_bytes": 5887592,
+      "sha256": "00369f5c96650b69c54b3c8c79c7900860c8ba2cad99ad98a262fca69e509ac0"
+    },
+    {
+      "path": "docker-compose.yml",
+      "size_bytes": 512,
+      "sha256": "3ee37da109532cb3cfd6c08f7d8125ebe3afcd3b1556bbee5f5353fdedd52167"
+    },
+    {
+      "path": "forecasting/__init__.py",
+      "size_bytes": 85,
+      "sha256": "c4636d7808f449c93c7bda5463eb2cbe45b2a5c805b1d30b41b6b3cc72f7dec7"
+    },
+    {
+      "path": "forecasting/forecast_pipeline.py",
+      "size_bytes": 14140,
+      "sha256": "86da43aa3d6381b2e901170a2170a08ac5b45d4b83fa16df75d6eb2b9d1b34f6"
+    },
+    {
+      "path": "forecasting/forecast_service.py",
+      "size_bytes": 4789,
+      "sha256": "9285f578c4390af496ce224dd6e5f4180c207e35b4721357b6cfec0a2d6c091d"
+    },
+    {
+      "path": "forecasting/sarima_runner.py",
+      "size_bytes": 5687,
+      "sha256": "3a104fcfbde678fb1f66c960dbe8ca41ac88260b0efa317a0c86932daef8abcc"
+    },
+    {
+      "path": "generate_bhubaneswar_traffic.py",
+      "size_bytes": 15886,
+      "sha256": "3f7f029f2c84ffa241ed2befa2d01b8791d0999b40b77e617231a712857c47d3"
+    },
+    {
+      "path": "merge_and_retrain.py",
+      "size_bytes": 673,
+      "sha256": "aabc42958570b426cfccf51116097613b4a0cce84cea24a44260fdb96b731359"
+    },
+    {
+      "path": "ml_pipeline.py",
+      "size_bytes": 11898,
+      "sha256": "9d85e3455c1be881360db4261ac0854290658138d797c623029e87dfd646d907"
+    },
+    {
+      "path": "models/best_model.pkl",
+      "size_bytes": 51057587,
+      "sha256": "622bc7eaafc283e42ecb04e157484c900a5af3dfa86ff067887fad04d83189cd"
+    },
+    {
+      "path": "models/feature_cols.pkl",
+      "size_bytes": 310,
+      "sha256": "67a86a54a66eda5514d35d5f3bc4da2fae2860e48b51ac501cc0978d2f0c1171"
+    },
+    {
+      "path": "models/forecasting/random_forest_30m_avg_speed.joblib",
+      "size_bytes": 3950250,
+      "sha256": "952329a265bcdafcd1c4f5e62c47ec933e223062cca49d9aa9ae288613967b9c"
+    },
+    {
+      "path": "models/forecasting/random_forest_30m_vehicle_count.joblib",
+      "size_bytes": 3966234,
+      "sha256": "9128a96e39cca46cf5fc31ccec9861c31cb045aec646e7d48aa29a2a17654b70"
+    },
+    {
+      "path": "models/forecasting/random_forest_60m_avg_speed.joblib",
+      "size_bytes": 3938730,
+      "sha256": "5ff6550caf6340064cea780c50a4d4dfbef2ab03c56baba1fbfea1e559ecda9c"
+    },
+    {
+      "path": "models/forecasting/random_forest_60m_vehicle_count.joblib",
+      "size_bytes": 4281450,
+      "sha256": "99df7c9597ec2db276dfbf897b4a65ba1386c79258a75a769c6241eac6ed8d53"
+    },
+    {
+      "path": "models/forecasting/random_forest_classifier_30m.joblib",
+      "size_bytes": 1448490,
+      "sha256": "d11b606b9258a87e4305d42dbe70c8a8a362537931ca7b549011c26a75cdee5e"
+    },
+    {
+      "path": "models/forecasting/random_forest_classifier_60m.joblib",
+      "size_bytes": 1487562,
+      "sha256": "addbfdaf672ad6fa0c540df16c2a8e64956a9379361f4619ea16378103a666aa"
+    },
+    {
+      "path": "models/forecasting/xgboost_30m_avg_speed.joblib",
+      "size_bytes": 122149,
+      "sha256": "3cf5366d66c8770edb2879f0a70dc46bca678abaf1d5d04c850bd1d6c5814e3b"
+    },
+    {
+      "path": "models/forecasting/xgboost_30m_vehicle_count.joblib",
+      "size_bytes": 122147,
+      "sha256": "2ab1e5a90302e5890c4726b7557254b07dcc141bc50ccab879d1e2fb16c6791c"
+    },
+    {
+      "path": "models/forecasting/xgboost_60m_avg_speed.joblib",
+      "size_bytes": 122149,
+      "sha256": "7852b1588bc0b1dadc7427629244ce10edb178332d08bf6ce39a0f6d60a89e5b"
+    },
+    {
+      "path": "models/forecasting/xgboost_60m_vehicle_count.joblib",
+      "size_bytes": 122147,
+      "sha256": "26a4aabcffc5f12b7c71eb57ddeb696bd85f86bd0dd641f0c0ae22dc18d70e69"
+    },
+    {
+      "path": "models/location_encoder.pkl",
+      "size_bytes": 610,
+      "sha256": "6081d80b5e492428b9d31389281a28cb86732e0229fe9eb0173e320d9dff3fad"
+    },
+    {
+      "path": "models/model_metadata.json",
+      "size_bytes": 2433,
+      "sha256": "fd3d0b36ced62e67c3405c8830e7890b8533f51e16df0a06d4ea8db9881656c3"
+    },
+    {
+      "path": "outputs/confusion_matrix.png",
+      "size_bytes": 40040,
+      "sha256": "669a9a61e8f7d1ebf5fd0b8a6fe6fad51f630b5c38010b94bf9824620d795eab"
+    },
+    {
+      "path": "outputs/confusion_matrix_persistence_baseline.png",
+      "size_bytes": 39419,
+      "sha256": "90fdb9bc92fe374c87aa1dd6c0b33f1946b97ecb02df161868c402f51c0ead27"
+    },
+    {
+      "path": "outputs/confusion_matrix_random_forest.png",
+      "size_bytes": 40040,
+      "sha256": "669a9a61e8f7d1ebf5fd0b8a6fe6fad51f630b5c38010b94bf9824620d795eab"
+    },
+    {
+      "path": "outputs/confusion_matrix_xgboost.png",
+      "size_bytes": 38337,
+      "sha256": "49dd0515c21c8e5bdaf817662cfd7ceaf90319ea8d5dc4c9302017fb8c80f73e"
+    },
+    {
+      "path": "outputs/congestion_distribution.png",
+      "size_bytes": 20309,
+      "sha256": "bda536b0f6e0fe44c899c03ad80eedfbae34a434fc7f4d9786c1823fcb7cef41"
+    },
+    {
+      "path": "outputs/congestion_network.png",
+      "size_bytes": 62475,
+      "sha256": "595984be10a603f942aa72d9287d39e95818fbb892e511f304b3f20047669dd5"
+    },
+    {
+      "path": "outputs/forecasting/confusion_matrix_classification_30m.png",
+      "size_bytes": 33844,
+      "sha256": "ba320e29cdbb6313c96e5b9f60a3c912e7b30a3151d8c4419f07fb789572a245"
+    },
+    {
+      "path": "outputs/forecasting/confusion_matrix_classification_60m.png",
+      "size_bytes": 34263,
+      "sha256": "62185a4c373280969c2b97360d21b93bdf54203fb9e423e66fcdc96d68da7f7c"
+    },
+    {
+      "path": "outputs/forecasting/forecast_comparison_30m_avg_speed.png",
+      "size_bytes": 286491,
+      "sha256": "4b3921580d89673aed19f4b5501bde65d1377d73cd30c1f9111eef84d8ae20ba"
+    },
+    {
+      "path": "outputs/forecasting/forecast_comparison_30m_vehicle_count.png",
+      "size_bytes": 288196,
+      "sha256": "0789d2a690a50f8ff520fe8bc29e733a54f794b866f555e9d3f5cc1d681b7664"
+    },
+    {
+      "path": "outputs/forecasting/forecast_comparison_60m_avg_speed.png",
+      "size_bytes": 294375,
+      "sha256": "1b2382a4bc596eb698af93c99f496ccc1cb2fe0875845b1ee3dcf55f240e895d"
+    },
+    {
+      "path": "outputs/forecasting/forecast_comparison_60m_vehicle_count.png",
+      "size_bytes": 299240,
+      "sha256": "92ca780294efaa6848464b7b3d1c75f9d6eda078cb72356c8bd25d5dbfcdcc83"
+    },
+    {
+      "path": "outputs/forecasting/forecast_metrics.json",
+      "size_bytes": 8002,
+      "sha256": "82fc14f6e751e9517c43d9e7a1b023526d553a0d2a4e443f6ebe1250559adb88"
+    },
+    {
+      "path": "outputs/forecasting/sarima_metrics.json",
+      "size_bytes": 2066,
+      "sha256": "f72743fbb9323df0d915774c8dd8c364bb824b5f6a4f34437f68a75d41a21c35"
+    },
+    {
+      "path": "outputs/hourly_congestion_sweep.png",
+      "size_bytes": 30304,
+      "sha256": "b07539d03595cce3cd94434615e2a3b8157f85ef36b650a264b5ff3fd7404d80"
+    },
+    {
+      "path": "outputs/model_comparison.png",
+      "size_bytes": 42185,
+      "sha256": "4e704a2646eed268061ddc5cdab66df254a227568aba42959043d890a95e1bdc"
+    },
+    {
+      "path": "outputs/model_comparison_summary.csv",
+      "size_bytes": 593,
+      "sha256": "0a2a667bc36b0218b447a622fe0691d3bd9991a7696509d84103421033946ef5"
+    },
+    {
+      "path": "outputs/network.png",
+      "size_bytes": 55648,
+      "sha256": "933bf222297b5f879848bd5cd20d1df36f69146c13566812486ae8ecf01d60f6"
+    },
+    {
+      "path": "outputs/phase1_data_summary.json",
+      "size_bytes": 527,
+      "sha256": "96baf36617f452a37a758224ea8dfe63f0ae23db984f8ec305e1bdcfa24e3df2"
+    },
+    {
+      "path": "outputs/phase1_metrics.json",
+      "size_bytes": 13556,
+      "sha256": "151b6a800dab10513f02f37ce65bbabd8f7d97c44f066e0ae5b1815c32b36081"
+    },
+    {
+      "path": "outputs/traffic_by_day.png",
+      "size_bytes": 27770,
+      "sha256": "7520e27d35daed4f965aaf668ca50ca5c17ba07f3ea3bc1aefc7adac7a793664"
+    },
+    {
+      "path": "outputs/traffic_by_hour.png",
+      "size_bytes": 30668,
+      "sha256": "6d4338c67091ca204d49ab1936a3c535d5ab3807428e16665b5a6a675450aa11"
+    },
+    {
+      "path": "outputs/traffic_heatmap.png",
+      "size_bytes": 41066,
+      "sha256": "2e1bedf05bd280fd6c0b5467d4d66783a3b396e434a2165e825bdad60517243c"
+    },
+    {
+      "path": "phase1_preprocess.py",
+      "size_bytes": 5234,
+      "sha256": "cf8804d7b28b68b07eb346ea3fc6b1fd58a95cdcb6afd0af36ee354f16a7a125"
+    },
+    {
+      "path": "phase2_train.py",
+      "size_bytes": 14109,
+      "sha256": "d81a43030501f4e4e57a830ff9f3efdf9572ba54c07fe712e2af91e0c058639b"
+    },
+    {
+      "path": "phase3_graph_simulate.py",
+      "size_bytes": 6007,
+      "sha256": "d97e77946f1ced081d5c403e9f0b131bd3cf13c5916145248baa2a522ea0c259"
+    },
+    {
+      "path": "pytest.ini",
+      "size_bytes": 201,
+      "sha256": "334d3d8576170eea6faf7b53a0e41f0dd2ce3accc85a0442ebeabd27cfe2385e"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 894,
+      "sha256": "6960b7d76b275aba6a64b7a39f5485538c287c5923536361a9a2261a5da53916"
+    },
+    {
+      "path": "routing/__init__.py",
+      "size_bytes": 56,
+      "sha256": "526fc890ab486007c1cce31f2f078a91b26767b2c02ef6cd5b4fae4524d1a393"
+    },
+    {
+      "path": "routing/flow_matching.py",
+      "size_bytes": 8362,
+      "sha256": "191efd41601bd2ccd31f4762973f6bbc0239d76c2a708299aa9676a81b577411"
+    },
+    {
+      "path": "routing/incident_manager.py",
+      "size_bytes": 3752,
+      "sha256": "1610c506b76f3784f5fad7c9b04debbbf2d54c534d43d9bf0e036b05191acd00"
+    },
+    {
+      "path": "routing/osm_network.py",
+      "size_bytes": 11433,
+      "sha256": "bacaa0ef898bcb4dca70c76f6b20b7fad7d2cad6f3ed94220f0bb7c8608fa9b1"
+    },
+    {
+      "path": "routing/route_optimizer.py",
+      "size_bytes": 14314,
+      "sha256": "8c2ff453af2456ca274d17da2e033daedc41a75aa5715cd447d260fc8bc53ed0"
+    },
+    {
+      "path": "routing/tomtom_routing.py",
+      "size_bytes": 5922,
+      "sha256": "81d3292f7d0fdae153ccaa17b637ead0eb3a08df2cd82b5674be2df1a59a90a9"
+    },
+    {
+      "path": "screenshots/README.md",
+      "size_bytes": 2047,
+      "sha256": "9405d5140e4ac383c69041dc87bb707562a40c4fc605fbb20ad122857c329761"
+    },
+    {
+      "path": "screenshots/dark_theme/c_dark_01_overview.png",
+      "size_bytes": 245914,
+      "sha256": "51d8a84f4af16f75f820226d0e19658d765accfb4741b8579dbced012a0430dc"
+    },
+    {
+      "path": "screenshots/dark_theme/c_dark_02_traffic_map.png",
+      "size_bytes": 222440,
+      "sha256": "ec8c5d4962a466908b5ee738d962ae36034c2856b5bd3a4ceeb02a3932fa700c"
+    },
+    {
+      "path": "screenshots/dark_theme/c_dark_03_route_planner.png",
+      "size_bytes": 241451,
+      "sha256": "0dbb5f3cad41e151b848895868e94e4661fdd6607e72f50fcf23facfd8e7955a"
+    },
+    {
+      "path": "screenshots/default_state/a_01_overview.png",
+      "size_bytes": 254814,
+      "sha256": "6e7fd3d5dac9ea0105ebaaafe965af4050651cb9595b4abdca03f712ae32ef31"
+    },
+    {
+      "path": "screenshots/default_state/a_02_traffic_map.png",
+      "size_bytes": 219694,
+      "sha256": "97a5b525e7b62a776579a88b3ad7f964f910bf7f3891144f7bfd81812b92adb4"
+    },
+    {
+      "path": "screenshots/default_state/a_03_prediction.png",
+      "size_bytes": 285710,
+      "sha256": "22b75fa1f2a6b1d1fe425c5b40be1a91fe0291b84f5b14b39f1ce7fcc78b969b"
+    },
+    {
+      "path": "screenshots/default_state/a_04_forecasting.png",
+      "size_bytes": 209536,
+      "sha256": "ae75e5cc0878c34c328d592f67ae26ca758911884613756c8b63729413eca99d"
+    },
+    {
+      "path": "screenshots/default_state/a_05_route_planner.png",
+      "size_bytes": 239092,
+      "sha256": "d808893796bb6717a78c333ef12a61d61ecdcef220b7a118ea30d8d6c1202441"
+    },
+    {
+      "path": "screenshots/default_state/a_06_incident_lab.png",
+      "size_bytes": 130453,
+      "sha256": "dc3e87bf77cddfafe72daa9c331519df0f7097f8378d41d2c67041e92bf944f9"
+    },
+    {
+      "path": "screenshots/default_state/a_07_weather.png",
+      "size_bytes": 74628,
+      "sha256": "db6dcb9798e4df779d5e697f4aaae0f276c8c4663e03986b19e1fd4fb4275f0b"
+    },
+    {
+      "path": "screenshots/default_state/a_08_copilot.png",
+      "size_bytes": 95690,
+      "sha256": "a2e48d3793c91e305f2594154c54351a210968ddd99bb958b33d0fbcfe63e69a"
+    },
+    {
+      "path": "screenshots/default_state/a_09_model_evaluation.png",
+      "size_bytes": 205516,
+      "sha256": "79447e9fa7361da834cc10c7096a807687fb5651e5b445d97f5f367ce8c357b3"
+    },
+    {
+      "path": "screenshots/osm_code_path_TEST_FIXTURE_ONLY/b_osm_FIXTURE_TESTONLY_01_overview.png",
+      "size_bytes": 252019,
+      "sha256": "46a11d4775faa57332032e1863079465a2b225acb71d24a6f7e1b03dc63fc5a2"
+    },
+    {
+      "path": "screenshots/osm_code_path_TEST_FIXTURE_ONLY/b_osm_FIXTURE_TESTONLY_02_traffic_map.png",
+      "size_bytes": 163190,
+      "sha256": "b3ca2d58bcfac2978d17458fa77250437c6c211f5852c89740404833035a2719"
+    },
+    {
+      "path": "screenshots/osm_code_path_TEST_FIXTURE_ONLY/b_osm_FIXTURE_TESTONLY_03_route_planner.png",
+      "size_bytes": 214135,
+      "sha256": "148d73283f4eaa5d839db887d81ac5bbae1274b0cb9ae60b3607ee74c18319f7"
+    },
+    {
+      "path": "screenshots/osm_code_path_TEST_FIXTURE_ONLY/b_osm_FIXTURE_TESTONLY_04_map_click_route.png",
+      "size_bytes": 199608,
+      "sha256": "042e17efbaa05cf6bb34baec3eb6f3bf613bd280ad46c234a095b23c21ab9faf"
+    },
+    {
+      "path": "scripts/download_osm.py",
+      "size_bytes": 1420,
+      "sha256": "e94b71460d56b66aaa8d1327b3355ca99ffd3715364d82e0b282fa434f2f6e15"
+    },
+    {
+      "path": "scripts/generate_manifest.py",
+      "size_bytes": 2243,
+      "sha256": "666a812a5c6dc099e0321eafe630229d8bc802bee31d7a66ae1c37364fe570f8"
+    },
+    {
+      "path": "scripts/render_metric_tables.py",
+      "size_bytes": 5732,
+      "sha256": "68415d5f84ae8bdea13bcd0a57ca8685e7547c213e627eac7dbf2c09587eb94e"
+    },
+    {
+      "path": "scripts/verify_manifest.py",
+      "size_bytes": 2300,
+      "sha256": "df1229382ffbce4aa8c9f100ca5b502c9cabcde4d3b9b9edbdba1b054a2b98bf"
+    },
+    {
+      "path": "services/__init__.py",
+      "size_bytes": 54,
+      "sha256": "bf29c9cb4d874c3b4d8fdbf91e774251add10dee1f32ec149df5d31b356bdc79"
+    },
+    {
+      "path": "services/osrm_service.py",
+      "size_bytes": 1316,
+      "sha256": "a871d62f0aec757eca14330879d29ac3531bfa997d9892b2f8bd3562fcc9122a"
+    },
+    {
+      "path": "services/tomtom_service.py",
+      "size_bytes": 2799,
+      "sha256": "0de6156d3ac29ae6eab775d1017208e3d8d46fdde81980684a11e25c3e3520c7"
+    },
+    {
+      "path": "services/traffic_service.py",
+      "size_bytes": 5936,
+      "sha256": "d478ed1ad70a76a270e3231b53899570354c2e43085266b96b3932ababd3e8e2"
+    },
+    {
+      "path": "services/weather_service.py",
+      "size_bytes": 5281,
+      "sha256": "992a25ddc04e17f69871c28965f05bb1b04ceb66c80cc8f916c718cef95871ce"
+    },
+    {
+      "path": "simulation/__init__.py",
+      "size_bytes": 64,
+      "sha256": "69169546127d8ea9eb2e59bed9f5eb6a7008ff226e3561b17bb8d97833517724"
+    },
+    {
+      "path": "simulation/traffic_simulator.py",
+      "size_bytes": 1903,
+      "sha256": "1e718475a753d002c03f2343adfa2f4db8d63896f604be05b262ff4c7b985d78"
+    },
+    {
+      "path": "simulation_engine.py",
+      "size_bytes": 24168,
+      "sha256": "e6580c428a65ef02f1dd6d778fcd424cf6fd92434c49178ed7ef0092488f2588"
+    },
+    {
+      "path": "tests/fixtures/mini_grid.osm",
+      "size_bytes": 3259,
+      "sha256": "1b3f5430e3d69b965408d2ca62010f44301daa3fdd3f379c4239680c77cd5816"
+    },
+    {
+      "path": "tests/mock_osm_server.py",
+      "size_bytes": 3399,
+      "sha256": "6c136dc8e9be8dca56905fa2fbb170ed58cb7e53d1860001689dcabe35181062"
+    },
+    {
+      "path": "tests/test_api.py",
+      "size_bytes": 4916,
+      "sha256": "374b090ba9107a84f832f270238791ac89cd95378668e52875ad761e1daa6e79"
+    },
+    {
+      "path": "tests/test_artifact_compat.py",
+      "size_bytes": 3438,
+      "sha256": "6ce511770dd04ae55d0ceae85d9a10d83239568166dcd5fa76cceaa800957b15"
+    },
+    {
+      "path": "tests/test_copilot.py",
+      "size_bytes": 881,
+      "sha256": "2484869ad16eae685c2babe785b33f0e64dad641a7167ed8ef91dc3fb7d1430b"
+    },
+    {
+      "path": "tests/test_ml_pipeline.py",
+      "size_bytes": 4106,
+      "sha256": "af3bb7f602f6fc06beed21ee33cdaddc572ec542497692f0deb97caad1028112"
+    },
+    {
+      "path": "tests/test_osm_and_ui.py",
+      "size_bytes": 11323,
+      "sha256": "5fd259064fd53d8aa3cd8741a77c5e5f28821c16d48a724080006e661641a60d"
+    },
+    {
+      "path": "tests/test_osm_download_cache.py",
+      "size_bytes": 4307,
+      "sha256": "79d8bbd06d4bb9f26d7a18a2d4f3f5091925127fa4c3af022095dac050a8af28"
+    },
+    {
+      "path": "tests/test_routing.py",
+      "size_bytes": 2437,
+      "sha256": "ffe23fad2544e7e8b32a9af325a83dcceb1934d21dc6dbd3c5443e5e9ca8a036"
+    },
+    {
+      "path": "tests/test_tomtom.py",
+      "size_bytes": 2055,
+      "sha256": "024d67d2a76ba83eb220d289b63f80686d90c5b7447e3998beb563ed5bc09806"
+    },
+    {
+      "path": "tests/test_tomtom_routing.py",
+      "size_bytes": 9272,
+      "sha256": "4fc12fa8bba7eac5fb708819d4cdd9bd764322bf4359e69658a85f8e195e5578"
+    },
+    {
+      "path": "tests/test_weather_and_forecasting.py",
+      "size_bytes": 4663,
+      "sha256": "4b99e93f0b4c312bda13297c22f198407d8d93f4bb3f58b2dda878ebb997c38a"
+    },
+    {
+      "path": "tools/screenshot_capture/click_origin_destination.mjs",
+      "size_bytes": 5710,
+      "sha256": "98b94a37ca268f5b59763ee62974f5b9fc0aad33527ecae8b6beb954c30a6f7c"
+    },
+    {
+      "path": "tools/screenshot_capture/shoot.mjs",
+      "size_bytes": 5283,
+      "sha256": "b8cc94a236d7be706c832e70d91f1fd4607271703683bd46a7b521321acfb1c9"
+    },
+    {
+      "path": "ui/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ui/context.py",
+      "size_bytes": 3541,
+      "sha256": "4102ada0924e3155f976f552c34f3100ad7887db989c17cd14a802673745cbde"
+    },
+    {
+      "path": "ui/maps.py",
+      "size_bytes": 14336,
+      "sha256": "2842610f74e725a15d66ba9378ee76b8cfd72a95ea3ab5c1cc8614769077ce52"
+    },
+    {
+      "path": "ui/pages/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ui/pages/copilot.py",
+      "size_bytes": 2124,
+      "sha256": "bf6786eebd82ebf063339cfae83b91346af983f96177cfad6da299d1e557ab10"
+    },
+    {
+      "path": "ui/pages/evaluation.py",
+      "size_bytes": 2047,
+      "sha256": "13387018fe3c676ffda685f1468cad60e3fff49b290c3104565bb9fbef8b746a"
+    },
+    {
+      "path": "ui/pages/forecasting.py",
+      "size_bytes": 6133,
+      "sha256": "e0e9e5c33772d29082784908b40d16efb5e63cb0d8b56326bf32ab0c6f07a2a1"
+    },
+    {
+      "path": "ui/pages/incidents.py",
+      "size_bytes": 3323,
+      "sha256": "14603598a7a674fc93660cc26c9be09194cbf0c8af701e271b4f3a34ca85d878"
+    },
+    {
+      "path": "ui/pages/map_page.py",
+      "size_bytes": 9646,
+      "sha256": "4a9e0e1ba6e0f526e65d546aa66639e9236a9c79111f61c506ef56d3d2c1ce74"
+    },
+    {
+      "path": "ui/pages/overview.py",
+      "size_bytes": 7719,
+      "sha256": "0621d496b7bbbdd90b1126a37955bc276e023754f4d6e4ca059ce958ff614cf8"
+    },
+    {
+      "path": "ui/pages/prediction.py",
+      "size_bytes": 8505,
+      "sha256": "042688383935eff95f3744dbeb69e54f4faba9042d5ac636b14eeca52df3b1ee"
+    },
+    {
+      "path": "ui/pages/route_planner.py",
+      "size_bytes": 10816,
+      "sha256": "d2102cea38ed058c8d0ae2e0ebf6c75111d3e0d7fe226d5a9f48a63a6af8c6dd"
+    },
+    {
+      "path": "ui/pages/weather.py",
+      "size_bytes": 1783,
+      "sha256": "84086edae55e8f154cd11792097a33747440e2663c0211cf8de1c2f5751b7db9"
+    },
+    {
+      "path": "ui/route_helpers.py",
+      "size_bytes": 3327,
+      "sha256": "b000947434850863b379820e8e3c8bad2dbf722f67a4f300f1dc1bec8010bddd"
+    },
+    {
+      "path": "ui/status.py",
+      "size_bytes": 2216,
+      "sha256": "7a4a28f0108bff20dc78be8f067b4cacbeb8c841b1ea41f919eefd647c4535ea"
+    },
+    {
+      "path": "ui/theme.py",
+      "size_bytes": 6088,
+      "sha256": "5ed7adb60c45d7a29a323b847d5f9f4ffe9a82c769e6435fb02656e6f68ac982"
+    },
+    {
+      "path": "verification/api_endpoint_execution.log",
+      "size_bytes": 3077,
+      "sha256": "f98d3e183f4b9ef7b487d9477b3e37e5460ce215b8d92adb5448f799cae9740f"
+    },
+    {
+      "path": "verification/api_endpoint_execution.py",
+      "size_bytes": 3191,
+      "sha256": "4f5b22467e84844e96b8587c0f1f47e0814852e46299e6610c81463a036a7f41"
+    },
+    {
+      "path": "verification/api_results.json",
+      "size_bytes": 45505,
+      "sha256": "d9f0412fa150926a395d58403c73e6026efaa5c3fa674d23b6facc4fa5765e3d"
+    },
+    {
+      "path": "verification/artifact_integrity.log",
+      "size_bytes": 1361,
+      "sha256": "782a828d8befe85407d26db323bb4c6988de6a77e20f0bfa74ecc099424c7b5c"
+    },
+    {
+      "path": "verification/artifact_integrity.py",
+      "size_bytes": 1412,
+      "sha256": "2614b21cfb472f01ab3dd56f4c4b1e815f7be37dc7f22c20fc36225eeb859d5c"
+    },
+    {
+      "path": "verification/artifact_integrity_release.log",
+      "size_bytes": 1362,
+      "sha256": "5e668d9a70fb5788e84f88345b8dbbc3a0ad85e59ae58a920f53b8a42fd49e9e"
+    },
+    {
+      "path": "verification/compileall.log",
+      "size_bytes": 17,
+      "sha256": "f8ebc65bcf3d22d004eddde09612fcff2d08ea954cb441132209d74adf4b6451"
+    },
+    {
+      "path": "verification/compileall_final.log",
+      "size_bytes": 17,
+      "sha256": "f8ebc65bcf3d22d004eddde09612fcff2d08ea954cb441132209d74adf4b6451"
+    },
+    {
+      "path": "verification/compileall_release.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/deployment_readiness/compileall_final.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/deployment_readiness/exit_codes.txt",
+      "size_bytes": 32,
+      "sha256": "110108d62540fc32ea572c755ef4464cca23da448b1db5b11d1282e41e5256b7"
+    },
+    {
+      "path": "verification/deployment_readiness/fresh_extract_compileall.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/deployment_readiness/fresh_extract_pytest.log",
+      "size_bytes": 99,
+      "sha256": "65f5a66e57b0510e468befff5d315d3d5c5f5b478375e9a9701a74e2ada67a1f"
+    },
+    {
+      "path": "verification/deployment_readiness/optional_runtime_exit_codes.txt",
+      "size_bytes": 43,
+      "sha256": "f754fc220989f5f12eb20103d385b9c1714d52cb748828f395ba3127fb51d2dc"
+    },
+    {
+      "path": "verification/deployment_readiness/pip_install_optional_dependencies.log",
+      "size_bytes": 421,
+      "sha256": "efccc0ce5cf2ef3ee7a942c45ef63d9978e2fc3ec8ddc7641ef63b520fcbe43c"
+    },
+    {
+      "path": "verification/deployment_readiness/pytest_final.log",
+      "size_bytes": 99,
+      "sha256": "fccbb89da2b1a03f78331c39f1394535b7fdda2e5d5cf8b96b7b5becfe0ef122"
+    },
+    {
+      "path": "verification/deployment_readiness/runtime_probe.log",
+      "size_bytes": 1918,
+      "sha256": "4bee1e0e07920f62af52131f4cdfd38d7295efb664ff7c5c73afbf271eea8348"
+    },
+    {
+      "path": "verification/deployment_readiness/runtime_probe.py",
+      "size_bytes": 2443,
+      "sha256": "5d0d570663f4a06c3ccc5862d47465c6a3b9f64a1d6da7b78b0d578816710a5c"
+    },
+    {
+      "path": "verification/deployment_readiness/streamlit_launch_attempt.log",
+      "size_bytes": 50,
+      "sha256": "5f54144bf4e6a0f6419118f87eed502aff4da94fcb5e233c9c48b43e6603f704"
+    },
+    {
+      "path": "verification/deployment_readiness/uvicorn_health.json",
+      "size_bytes": 821,
+      "sha256": "b9c3064e3f8ca311abb7d4b87961a5227e79c035d63230e094a81e703df5db6f"
+    },
+    {
+      "path": "verification/deployment_readiness/uvicorn_http_results.txt",
+      "size_bytes": 47,
+      "sha256": "16797679c02a730e3f4606b886216d49cc3dd871978b815b8f9fd536cb8f05fb"
+    },
+    {
+      "path": "verification/deployment_readiness/uvicorn_startup.log",
+      "size_bytes": 564,
+      "sha256": "6024210c7f71bffabfce4b6fc9808ab8035ffcb2520200b4edfe72425a197f5a"
+    },
+    {
+      "path": "verification/deployment_readiness/uvicorn_tomtom.json",
+      "size_bytes": 101,
+      "sha256": "2b54106d54217b3e7b81bfb67c2ded81d2813b2b17809155d6d2c5819890056f"
+    },
+    {
+      "path": "verification/deployment_readiness/uvicorn_weather.json",
+      "size_bytes": 227,
+      "sha256": "80af0a6a73d0225fefd6fc9ba9bdf538c6601de4dc31564d2ef0423ea1bf4a68"
+    },
+    {
+      "path": "verification/environment_and_dashboard.log",
+      "size_bytes": 3362,
+      "sha256": "e3f5db9cbcf56ca1d50f23b9a34f1cfe17c9102e42a703e422e5e77e01430303"
+    },
+    {
+      "path": "verification/forecast_pipeline.log",
+      "size_bytes": 7851,
+      "sha256": "49e003155239d5429e35b914d5a181339e803be676e9c07f46ea9fad929d7873"
+    },
+    {
+      "path": "verification/forecast_pipeline_rerun.log",
+      "size_bytes": 7852,
+      "sha256": "8cba273a289439567829df07c6db3a4cac53eb035068bd1b4513ed5b30653573"
+    },
+    {
+      "path": "verification/phase1_hash_after.txt",
+      "size_bytes": 187,
+      "sha256": "0ab62f051f6326b74e674d42c63584ed6dfa5902f77159b52bdce1cf6ed7915a"
+    },
+    {
+      "path": "verification/phase1_hash_before.txt",
+      "size_bytes": 187,
+      "sha256": "0ab62f051f6326b74e674d42c63584ed6dfa5902f77159b52bdce1cf6ed7915a"
+    },
+    {
+      "path": "verification/phase1_preprocess.log",
+      "size_bytes": 1045,
+      "sha256": "89ed48f46835c5701c424fee787e2453bdddfdb9cb9722553ba6546a5e295b91"
+    },
+    {
+      "path": "verification/phase1_preprocess_rerun.log",
+      "size_bytes": 1045,
+      "sha256": "89ed48f46835c5701c424fee787e2453bdddfdb9cb9722553ba6546a5e295b91"
+    },
+    {
+      "path": "verification/phase2_reproducibility_rerun.log",
+      "size_bytes": 1805,
+      "sha256": "790f4e6d09df471830ec1c6432f3c43754b9e5ff6ec1504f5a2ebdb80f29eebe"
+    },
+    {
+      "path": "verification/phase2_train.log",
+      "size_bytes": 1805,
+      "sha256": "790f4e6d09df471830ec1c6432f3c43754b9e5ff6ec1504f5a2ebdb80f29eebe"
+    },
+    {
+      "path": "verification/phase2_train_rerun.log",
+      "size_bytes": 1805,
+      "sha256": "790f4e6d09df471830ec1c6432f3c43754b9e5ff6ec1504f5a2ebdb80f29eebe"
+    },
+    {
+      "path": "verification/pytest_after_fixes.log",
+      "size_bytes": 99,
+      "sha256": "733ea813e4f9cbb512ec755c4124475d65926befeaa9f5d80ae5a3fa9ed57acd"
+    },
+    {
+      "path": "verification/pytest_final.log",
+      "size_bytes": 99,
+      "sha256": "1a694485f70c0eed8f1440d2540008d90fc36d51486b222112427b746038f046"
+    },
+    {
+      "path": "verification/pytest_full.log",
+      "size_bytes": 99,
+      "sha256": "30d5a4de0178ec46cc2c09f847e88bac2ccdf78f099371cd975eb3afe3026d12"
+    },
+    {
+      "path": "verification/pytest_release.log",
+      "size_bytes": 99,
+      "sha256": "bd3d038e43dc94739d8889efa2bcfe856cfa2cabfa168463909e53fafdea8bc0"
+    },
+    {
+      "path": "verification/routing_incident_execution.log",
+      "size_bytes": 694,
+      "sha256": "3665204e316a3c642052f4c9474ff2feffcc4cca7652f363167aa442030f44dd"
+    },
+    {
+      "path": "verification/sarima_pilot.log",
+      "size_bytes": 2065,
+      "sha256": "c0aadd52d2ab26618cdb402af0053946eebc9c3ca4d6c57d00bcdaf5f8e773cc"
+    },
+    {
+      "path": "verification/sarima_pilot_rerun.log",
+      "size_bytes": 2065,
+      "sha256": "c0aadd52d2ab26618cdb402af0053946eebc9c3ca4d6c57d00bcdaf5f8e773cc"
+    },
+    {
+      "path": "verification/uvicorn_live_http.log",
+      "size_bytes": 791,
+      "sha256": "d6128109be8eb9f8030914d5246547be47d775178150ffb3e08e5eeb881e81ff"
+    },
+    {
+      "path": "verification/uvicorn_startup.log",
+      "size_bytes": 1539,
+      "sha256": "219a7d2f79b812cb63035de5fa8d93fab4238a8009ce403c33a9b00994d6861d"
+    },
+    {
+      "path": "verification/v3/README.md",
+      "size_bytes": 1185,
+      "sha256": "68fae97ebbb7534804b5ed4dad9aedbd923d8a7073c0bf9c3ae20926f1284a16"
+    },
+    {
+      "path": "verification/v3/browser_capture_a.log",
+      "size_bytes": 795,
+      "sha256": "5f1be5a2efb2feb6bfab8b5419236f08bd01010fdc5fd87041cd979e4419098a"
+    },
+    {
+      "path": "verification/v3/browser_capture_b.log",
+      "size_bytes": 552,
+      "sha256": "2cffecc211ee20966cf1adc8f81fd13adbf4cf54f6d38601177130c5c777812b"
+    },
+    {
+      "path": "verification/v3/browser_capture_c.log",
+      "size_bytes": 504,
+      "sha256": "9dc4bc8c34d0eefaa467ec2b185fc43e9ded734407e422a170ad59b94b0a959a"
+    },
+    {
+      "path": "verification/v3/browser_click_test.log",
+      "size_bytes": 336,
+      "sha256": "a49e7e46eccc5b7fb98dfcff1605f9152527ec197dcd47bdc58a09b830420488"
+    },
+    {
+      "path": "verification/v3/compileall_v3.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/v3/pytest_v3.log",
+      "size_bytes": 5904,
+      "sha256": "455fe50ae3853b50d08caaf7cc15b7bd655f85eb75acab25d53d6a8cedea915d"
+    },
+    {
+      "path": "verification/v3/pytest_v3_verbose.log",
+      "size_bytes": 6329,
+      "sha256": "aaea4dd3529c0875a35c25b53d41f67aaf402e32332ce78abd2ec4e3134a9ff3"
+    },
+    {
+      "path": "verification/v3/requirements.linux-py312.freeze.txt",
+      "size_bytes": 1533,
+      "sha256": "1d4d218bd2d9b420a56506d00ec991936577cd986f31d621c4fd305baaa1c3a1"
+    },
+    {
+      "path": "verification/v3/requirements.windows-cp314.resolved.txt",
+      "size_bytes": 5420,
+      "sha256": "edc608ff9f449491fbe2255e96c535a871f37278e265ca424ecb772598de028f"
+    }
+  ]
+}

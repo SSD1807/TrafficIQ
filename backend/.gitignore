@@ -1,0 +1,96 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.venv/
+venv/
+.DS_Store
+cache/
+*.log
+.streamlit/secrets.toml
+# Keep trained model artifacts in the project release; ignore only temporary training files.
+*.tmp
+
+# --- secrets (never commit) ---
+.env.*
+!.env.example
+**/.env
+**/.env.local
+*.pem
+*.key
+# -----------------------------
+# Python cache and build files
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# -----------------------------
+# Python environments
+# -----------------------------
+venv/
+.venv/
+ENV/
+env/
+
+# -----------------------------
+# Node.js / React / Vite
+# -----------------------------
+node_modules/
+dist/
+build/
+.vite/
+coverage/
+
+# -----------------------------
+# IDE and editor files
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------------
+# Operating system files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Logs and temporary files
+# -----------------------------
+*.log
+*.tmp
+*.bak
+
+# -----------------------------
+# Local environment secrets
+# -----------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+
+# -----------------------------
+# Streamlit local secrets
+# -----------------------------
+.streamlit/secrets.toml
+
+# -----------------------------
+# Local databases
+# -----------------------------
+*.sqlite
+*.sqlite3
+*.db
+
+# -----------------------------
+# Model training temporary files
+# -----------------------------
+*.ipynb_checkpoints/

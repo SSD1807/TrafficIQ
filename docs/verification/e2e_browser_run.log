@@ -1,0 +1,68 @@
+PASS overview: title 
+PASS overview: real location count (10) 
+PASS overview: synthetic banner 
+PASS overview: topbar reflects /health 
+PASS overview: no demo strings 
+PASS overview: predicted risk list rendered 
+PASS overview: map rendered with 10 prediction markers 10
+PASS map: leaflet rendered 
+PASS map: 10 location markers 10
+PASS map: TomTom status honest (disabled) 
+PASS map: layer switch works 
+PASS prediction: class result shown 
+PASS prediction: probabilities chart 
+PASS prediction: location change re-queries 
+PASS prediction: what-if override accepted 
+PASS forecast: 30 and 60 min cards 
+PASS forecast: both horizons requested 
+PASS forecast: xgboost family requested 
+PASS forecast: all-locations comparison (10 calls) 
+PASS route: backend connected badge 
+PASS route: fallback graph honestly labelled 
+PASS route: node-mode request ok 
+PASS route: 3 ranked alternatives Rank 1,Rank 2,Rank 3
+PASS route: polyline drawn on map 
+PASS route: routing details shown 
+PASS route: A* result 
+PASS route: coordinate-mode request ok calls=3
+PASS route: place-name mode sends request and shows result or readable error calls=4
+PASS incidents: segment click fills edge fields 
+PASS incidents: POST /incidents 201 
+PASS incidents: appears in feed 
+PASS incidents: route re-planned around incident before=Nodes: 1 → 3 → 8 | after=Nodes: 1 → 5 → 8
+PASS incidents: DELETE ok 
+PASS incidents: feed empty after delete 
+PASS incidents: invalid edge -> backend 400 message shown 
+PASS weather: unavailable state honest (no internet) 
+PASS weather: simulated fallback clearly labelled 
+PASS copilot: real backend answer 
+PASS copilot: mode labelled rule-based 
+PASS copilot: tool results expandable 
+PASS copilot: incident question answered 
+PASS eval: real classifier metrics (RF accuracy 96.1%) 
+PASS eval: forecast regressor table 
+PASS eval: no fabricated LSTM table 
+PASS eval: unavailable items stated 
+PASS eval: model switch updates matrix 
+PASS sidebar: all 9 nav links navigate 
+PASS responsive: mobile route page renders 
+PASS error state: backend unreachable message shown 
+
+SUMMARY {
+ "origin": "http://127.0.0.1:5173",
+ "passed": 49,
+ "failed": 0,
+ "unexpectedConsoleErrors": [],
+ "pageErrors": [],
+ "apiNon2xx_beforeBackendDown": [
+  "POST /routes/calculate -> 400",
+  "POST /incidents -> 400"
+ ],
+ "externalHostsFailed": [
+  "fonts.googleapis.com",
+  "a.basemaps.cartocdn.com",
+  "b.basemaps.cartocdn.com",
+  "c.basemaps.cartocdn.com"
+ ]
+}
+E2E_EXIT=0

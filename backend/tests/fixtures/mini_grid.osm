@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="test-fixture">
+<node id="1000" lat="20.296100" lon="85.824500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1001" lat="20.296100" lon="85.828500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1002" lat="20.296100" lon="85.832500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1003" lat="20.296100" lon="85.836500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1010" lat="20.300100" lon="85.824500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1011" lat="20.300100" lon="85.828500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1012" lat="20.300100" lon="85.832500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1013" lat="20.300100" lon="85.836500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1020" lat="20.304100" lon="85.824500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1021" lat="20.304100" lon="85.828500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1022" lat="20.304100" lon="85.832500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1023" lat="20.304100" lon="85.836500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1030" lat="20.308100" lon="85.824500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1031" lat="20.308100" lon="85.828500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1032" lat="20.308100" lon="85.832500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<node id="1033" lat="20.308100" lon="85.836500" version="1" timestamp="2024-01-01T00:00:00Z"/>
+<way id="5001" version="1" timestamp="2024-01-01T00:00:00Z"><nd ref="1000"/><nd ref="1001"/><nd ref="1002"/><nd ref="1003"/><tag k="highway" v="primary"/><tag k="name" v="Test Primary Road"/><tag k="maxspeed" v="50"/></way>
+<way id="5002" version="1" timestamp="2024-01-01T00:00:00Z"><nd ref="1010"/><nd ref="1011"/><nd ref="1012"/><nd ref="1013"/><tag k="highway" v="secondary"/><tag k="name" v="Test One-Way Street"/><tag k="oneway" v="yes"/></way>
+<way id="5003" version="1" timestamp="2024-01-01T00:00:00Z"><nd ref="1020"/><nd ref="1021"/><nd ref="1022"/><nd ref="1023"/><tag k="highway" v="residential"/><tag k="name" v="Test Lane"/></way>
+<way id="5004" version="1" timestamp="2024-01-01T00:00:00Z"><nd ref="1030"/><nd ref="1031"/><nd ref="1032"/><nd ref="1033"/><tag k="highway" v="tertiary"/><tag k="name" v="Test Tertiary Road"/></way>
+<way id="5005" version="1" timestamp="2024-01-01T00:00:00Z"><nd ref="1000"/><nd ref="1010"/><nd ref="1020"/><nd ref="1030"/><tag k="highway" v="tertiary"/><tag k="name" v="Test Cross Street 1"/></way>
+<way id="5006" version="1" timestamp="2024-01-01T00:00:00Z"><nd ref="1001"/><nd ref="1011"/><nd ref="1021"/><nd ref="1031"/><tag k="highway" v="tertiary"/><tag k="name" v="Test Cross Street 2"/></way>
+<way id="5007" version="1" timestamp="2024-01-01T00:00:00Z"><nd ref="1002"/><nd ref="1012"/><nd ref="1022"/><nd ref="1032"/><tag k="highway" v="tertiary"/><tag k="name" v="Test Cross Street 3"/></way>
+<way id="5008" version="1" timestamp="2024-01-01T00:00:00Z"><nd ref="1003"/><nd ref="1013"/><nd ref="1023"/><nd ref="1033"/><tag k="highway" v="tertiary"/><tag k="name" v="Test Cross Street 4"/></way>
+</osm>

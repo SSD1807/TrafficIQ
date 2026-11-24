@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "dataset": "dataset/bhubaneswar_synthetic_traffic.csv",
+    "domain": "synthetic Bhubaneswar traffic; not real-world observed measurements",
+    "split": "chronological 80/20 by target_timestamp; identical holdout within each horizon",
+    "horizons_minutes": [
+      30,
+      60
+    ],
+    "targets": [
+      "vehicle_count",
+      "avg_speed"
+    ],
+    "models": [
+      "Persistence",
+      "Moving Average",
+      "Random Forest",
+      "XGBoost"
+    ],
+    "runtime_versions": {
+      "python": "3.12.3",
+      "pandas": "3.0.6",
+      "numpy": "2.5.4",
+      "scikit_learn": "1.9.1",
+      "xgboost": "3.4.1",
+      "joblib": "1.6.0"
+    },
+    "sarima_status": "separate optional rolling-origin experiment; run forecasting/sarima_runner.py",
+    "lstm_status": "not trained: TensorFlow is optional and the available panel is synthetic; no independent real-world series to justify a deep sequence model"
+  },
+  "results": {
+    "30m": {
+      "split": {
+        "train_rows": 27990,
+        "test_rows": 7000,
+        "train_target_end": "2023-02-28 07:30:00",
+        "test_target_start": "2023-02-28 08:00:00",
+        "test_target_end": "2023-03-14 21:30:00"
+      },
+      "targets": {
+        "vehicle_count": {
+          "Persistence": {
+            "mae": 140.72257142857143,
+            "rmse": 220.64819898264685,
+            "smape_pct": 24.77548679878695,
+            "n": 7000
+          },
+          "Moving Average": {
+            "mae": 162.26385714285715,
+            "rmse": 241.6933137689889,
+            "smape_pct": 30.812476134032764,
+            "n": 7000
+          },
+          "Random Forest": {
+            "mae": 79.25689149223074,
+            "rmse": 120.95687782825917,
+            "smape_pct": 12.902028409474777,
+            "n": 7000
+          },
+          "XGBoost": {
+            "mae": 93.77873660877773,
+            "rmse": 139.60794828940155,
+            "smape_pct": 17.421997938636753,
+            "n": 7000
+          }
+        },
+        "avg_speed": {
+          "Persistence": {
+            "mae": 4.8305,
+            "rmse": 6.556126360675399,
+            "smape_pct": 12.315773260623642,
+            "n": 7000
+          },
+          "Moving Average": {
+            "mae": 4.488366666666668,
+            "rmse": 6.099446852359803,
+            "smape_pct": 11.432704340421278,
+            "n": 7000
+          },
+          "Random Forest": {
+            "mae": 3.3558788531936514,
+            "rmse": 4.362083843237784,
+            "smape_pct": 8.509261111102653,
+            "n": 7000
+          },
+          "XGBoost": {
+            "mae": 3.7173275818416047,
+            "rmse": 4.870161449502657,
+            "smape_pct": 9.467964538042537,
+            "n": 7000
+          }
+        }
+      },
+      "congestion_classification": {
+        "model": "Random Forest classifier",
+        "accuracy": 0.954,
+        "precision_macro": 0.8423553819824728,
+        "recall_macro": 0.9474625262667912,
+        "f1_macro": 0.8808610486161812,
+        "classification_report": {
+          "Low": {
+            "precision": 0.9758542141230069,
+            "recall": 0.9789762340036563,
+            "f1-score": 0.9774127310061602,
+            "support": 2188.0
+          },
+          "Medium": {
+            "precision": 0.9841123647248445,
+            "recall": 0.9441130991826817,
+            "f1-score": 0.9636978579481398,
+            "support": 4527.0
+          },
+          "High": {
+            "precision": 0.5670995670995671,
+            "recall": 0.9192982456140351,
+            "f1-score": 0.7014725568942436,
+            "support": 285.0
+          },
+          "accuracy": 0.954,
+          "macro avg": {
+            "precision": 0.8423553819824728,
+            "recall": 0.9474625262667912,
+            "f1-score": 0.8808610486161812,
+            "support": 7000.0
+          },
+          "weighted avg": {
+            "precision": 0.964552724604841,
+            "recall": 0.954,
+            "f1-score": 0.9573084195839381,
+            "support": 7000.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2142,
+            46,
+            0
+          ],
+          [
+            53,
+            4274,
+            200
+          ],
+          [
+            0,
+            23,
+            262
+          ]
+        ],
+        "test_rows": 7000,
+        "label_mapping": {
+          "Low": 0,
+          "Medium": 1,
+          "High": 2
+        }
+      }
+    },
+    "60m": {
+      "split": {
+        "train_rows": 27980,
+        "test_rows": 7000,
+        "train_target_end": "2023-02-28 07:30:00",
+        "test_target_start": "2023-02-28 08:00:00",
+        "test_target_end": "2023-03-14 21:30:00"
+      },
+      "targets": {
+        "vehicle_count": {
+          "Persistence": {
+            "mae": 179.21085714285715,
+            "rmse": 266.70905389313543,
+            "smape_pct": 33.153027091948026,
+            "n": 7000
+          },
+          "Moving Average": {
+            "mae": 211.17333333333335,
+            "rmse": 304.85356239994394,
+            "smape_pct": 40.985754562342514,
+            "n": 7000
+          },
+          "Random Forest": {
+            "mae": 76.19100739762894,
+            "rmse": 115.60566206854162,
+            "smape_pct": 12.537245802128904,
+            "n": 7000
+          },
+          "XGBoost": {
+            "mae": 92.41736920874459,
+            "rmse": 137.05761452927564,
+            "smape_pct": 17.332699586957183,
+            "n": 7000
+          }
+        },
+        "avg_speed": {
+          "Persistence": {
+            "mae": 5.260514285714287,
+            "rmse": 7.1548814505502865,
+            "smape_pct": 13.440400471973982,
+            "n": 7000
+          },
+          "Moving Average": {
+            "mae": 5.077409523809524,
+            "rmse": 6.921410948918546,
+            "smape_pct": 12.956715685618564,
+            "n": 7000
+          },
+          "Random Forest": {
+            "mae": 3.3221957287436763,
+            "rmse": 4.316029058985522,
+            "smape_pct": 8.425831459428165,
+            "n": 7000
+          },
+          "XGBoost": {
+            "mae": 3.7155297551836286,
+            "rmse": 4.830621829633443,
+            "smape_pct": 9.461393642627476,
+            "n": 7000
+          }
+        }
+      },
+      "congestion_classification": {
+        "model": "Random Forest classifier",
+        "accuracy": 0.9545714285714286,
+        "precision_macro": 0.8441450324471144,
+        "recall_macro": 0.9454864248125752,
+        "f1_macro": 0.8817483982183453,
+        "classification_report": {
+          "Low": {
+            "precision": 0.9762881896944824,
+            "recall": 0.9785191956124314,
+            "f1-score": 0.977402419538918,
+            "support": 2188.0
+          },
+          "Medium": {
+            "precision": 0.983459682977257,
+            "recall": 0.9456593770709079,
+            "f1-score": 0.9641891891891892,
+            "support": 4527.0
+          },
+          "High": {
+            "precision": 0.5726872246696035,
+            "recall": 0.9122807017543859,
+            "f1-score": 0.7036535859269283,
+            "support": 285.0
+          },
+          "accuracy": 0.9545714285714286,
+          "macro avg": {
+            "precision": 0.8441450324471144,
+            "recall": 0.9454864248125752,
+            "f1-score": 0.8817483982183453,
+            "support": 7000.0
+          },
+          "weighted avg": {
+            "precision": 0.9644937718457723,
+            "recall": 0.9545714285714286,
+            "f1-score": 0.9577117464856839,
+            "support": 7000.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2141,
+            47,
+            0
+          ],
+          [
+            52,
+            4281,
+            194
+          ],
+          [
+            0,
+            25,
+            260
+          ]
+        ],
+        "test_rows": 7000,
+        "label_mapping": {
+          "Low": 0,
+          "Medium": 1,
+          "High": 2
+        }
+      }
+    }
+  }
+}

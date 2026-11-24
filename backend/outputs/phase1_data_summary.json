@@ -1,0 +1,19 @@
+{
+  "source_file": "dataset/bhubaneswar_synthetic_traffic.csv",
+  "source_rows": 35000,
+  "supervised_rows": 34990,
+  "location_count": 10,
+  "timestamp_start": "2023-01-01T00:00:00",
+  "timestamp_end": "2023-03-14T21:30:00",
+  "observed_label_counts": {
+    "Medium": 22339,
+    "Low": 11342,
+    "High": 1319
+  },
+  "next_30m_target_counts": {
+    "Medium": 22339,
+    "Low": 11332,
+    "High": 1319
+  },
+  "dataset_policy": "Bhubaneswar synthetic data is the primary model domain; Metro Interstate is retained separately."
+}

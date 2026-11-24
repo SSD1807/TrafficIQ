@@ -1,0 +1,1708 @@
+{
+ "project": "Traffic_Bottleneck_Final",
+ "build_date": "2026-11-12",
+ "file_count": 340,
+ "total_bytes": 102169158,
+ "files": [
+  {
+   "path": ".env.example",
+   "bytes": 4314,
+   "sha256": "41c78b7a52fc2ae9aa1d22b04326e9e3b34326312256283531d19fe87a077ba3"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 242,
+   "sha256": "4894a6e3634c40df6729d1732596d9eef6873dc05f9b516fe5a876a3553cb660"
+  },
+  {
+   "path": "README.md",
+   "bytes": 7742,
+   "sha256": "d06100c3d1212a3b41e5b8a7b70428670830f6a031d69e6e55aa0ffa47f14697"
+  },
+  {
+   "path": "backend/.env.example",
+   "bytes": 2215,
+   "sha256": "89a75d0a96ef60363706e5f2e653282ccb0328c390689232f62dbd55a9961665"
+  },
+  {
+   "path": "backend/.gitignore",
+   "bytes": 291,
+   "sha256": "93ca62f4995986940ab6dcc396d0e49038bba61ea6356e41e096e2c6e13d418f"
+  },
+  {
+   "path": "backend/.streamlit/config.toml",
+   "bytes": 133,
+   "sha256": "bc0f0f44afeb63d560d4556a93cbfec589736cf8f35ffeebe57e782f4c737c43"
+  },
+  {
+   "path": "backend/API_TEST_RESULTS.md",
+   "bytes": 4807,
+   "sha256": "60a90cfaeb8e2db31f0334f26a6e20fe5b85359679e857dffdd3499a418bacec"
+  },
+  {
+   "path": "backend/DASHBOARD_V3_GUIDE.md",
+   "bytes": 3735,
+   "sha256": "bfe0f6a31a48ea48ebd35c3687234db6a01c3784229db8e546802f08489c1051"
+  },
+  {
+   "path": "backend/DEPLOYMENT_READINESS_REPORT.md",
+   "bytes": 8184,
+   "sha256": "1aedc4fcbd8ccbe9d2144c88b6799d4571c3de9328e77fd1149155c32aa9cbab"
+  },
+  {
+   "path": "backend/Dockerfile",
+   "bytes": 432,
+   "sha256": "dabd17619a1fa3a6a160a1e960b1bb817eceb7ab63d23bf1993702e1cdb46570"
+  },
+  {
+   "path": "backend/FEATURE_STATUS.md",
+   "bytes": 9623,
+   "sha256": "bc13f0944b1aac7f7141f32587b3c1cf1ccc1158c43e059fdae7f210680524d7"
+  },
+  {
+   "path": "backend/FORECASTING_REPORT.md",
+   "bytes": 5390,
+   "sha256": "33a60fe468673d15760f95b2addcf55c599d06603b54f984b709c08fd3a411a2"
+  },
+  {
+   "path": "backend/INTEGRATION_AUDIT.md",
+   "bytes": 11503,
+   "sha256": "2520dac9e0564443a8ea7bb262996f485329837ba36f933edd35c7ec315cce31"
+  },
+  {
+   "path": "backend/PHASE1_ML_REPORT.md",
+   "bytes": 5103,
+   "sha256": "917060c9e9efe816b095465fad889a3966f1dc386983457dfe4d6c57d67414ec"
+  },
+  {
+   "path": "backend/README.md",
+   "bytes": 17175,
+   "sha256": "410fb43a06a071dcb6b527a60e2275fe6dda93b4caaac854f5160035eac0d09f"
+  },
+  {
+   "path": "backend/RELEASE_MANIFEST.zip1_original.json",
+   "bytes": 35931,
+   "sha256": "4892b0f1c5b07913f0bae06709195d4fa606b3f0c9d9deca82ca63d44f4c7acf"
+  },
+  {
+   "path": "backend/ROUTING_TEST_RESULTS.md",
+   "bytes": 2992,
+   "sha256": "aa6df1876a6a5696a3bf1b2cd49a60eac6bf66adf74fa338c0f31adc742cbd49"
+  },
+  {
+   "path": "backend/TECHNICAL_AUDIT.md",
+   "bytes": 15040,
+   "sha256": "ca2ae0e0152cf96f1ea8e4e159fe8e9b718266cf274a746a4193dce4ca9dd570"
+  },
+  {
+   "path": "backend/TEST_REPORT.md",
+   "bytes": 3617,
+   "sha256": "5a2857e953cfdafe63e6574afedd47ea7577e6733378cfc36be0942121c6604f"
+  },
+  {
+   "path": "backend/WINDOWS_STARTUP.md",
+   "bytes": 7171,
+   "sha256": "8f2549eba73987b34b788cb80305334862593c6ac1261901c77e852ab63455dd"
+  },
+  {
+   "path": "backend/animation_component.py",
+   "bytes": 30020,
+   "sha256": "2c0eefeddd9894346a5f3146aaaf080f910d169804ab2a04e1b99fea4578c724"
+  },
+  {
+   "path": "backend/backend/__init__.py",
+   "bytes": 35,
+   "sha256": "45390889d8a4a81a685fa8f8fb38422e5f6ff8840d7df1405f088ab5347ae8e2"
+  },
+  {
+   "path": "backend/backend/dependencies.py",
+   "bytes": 3456,
+   "sha256": "27e33c1848fd26298b0227eddf3e0be639abc9516b5cfdbf59c09d2edbf3bdcf"
+  },
+  {
+   "path": "backend/backend/main.py",
+   "bytes": 33166,
+   "sha256": "7e86e2e8090b3ca1b91468005872faf6f9fbae2693865318565e5341724c9c67"
+  },
+  {
+   "path": "backend/backend/schemas/__init__.py",
+   "bytes": 49,
+   "sha256": "e443c1b3c4ac55b715a85b2b821c547764806fee09cc957417b7ad206b93fc48"
+  },
+  {
+   "path": "backend/backend/schemas/api.py",
+   "bytes": 7750,
+   "sha256": "e0f33db6f6e7e862279e0bb56d599fc9364e437ec9adbe1094c41b7ede551f2d"
+  },
+  {
+   "path": "backend/bhubaneswar_synthetic_traffic.csv",
+   "bytes": 2339335,
+   "sha256": "3c6eb6136a7674a70aeaa0a926508db776bb56cfb1a0655dcb01d1f3fa56c4c1"
+  },
+  {
+   "path": "backend/check_models.py",
+   "bytes": 454,
+   "sha256": "f5012765966c14918ed6b48a317179ffa9133d428512381556b0b6e4e4cc3bd2"
+  },
+  {
+   "path": "backend/clean_traffic.csv",
+   "bytes": 2055483,
+   "sha256": "bad13cf8facafbf3969c7b5af06199c24805422ff5f97916ea3201b4c92d1547"
+  },
+  {
+   "path": "backend/config/location_coordinates.json",
+   "bytes": 1306,
+   "sha256": "2a304d76dfd3103c46137cb2e1cdd3c8383239e3b963c9ef44a105e323a8ed90"
+  },
+  {
+   "path": "backend/copilot/__init__.py",
+   "bytes": 37,
+   "sha256": "2c12dd43e094fabff32a5206360be94314778b72736d6a2553c89b99d5638b0e"
+  },
+  {
+   "path": "backend/copilot/agent.py",
+   "bytes": 49294,
+   "sha256": "39829359d086a2d2132e406cc8a639e1f6fb3508b1f34b0a15f21c867af2c344"
+  },
+  {
+   "path": "backend/copilot/incident_answers.py",
+   "bytes": 6557,
+   "sha256": "f9f9296f6377e54c252749aa69e89078378fe3ba98320e5964942db561c79fa6"
+  },
+  {
+   "path": "backend/dashboard.py",
+   "bytes": 2223,
+   "sha256": "773dbdbb31b33e75f1783d6764a73d3cb10e1adea90e285522b0f38d5142c2bd"
+  },
+  {
+   "path": "backend/dashboard_legacy.py",
+   "bytes": 30218,
+   "sha256": "0c7f63733e51986c3986f43e6b71880dd920654551444815f1fa4859afbdab74"
+  },
+  {
+   "path": "backend/dashboard_v1.py",
+   "bytes": 16804,
+   "sha256": "74fdadc37aa8a3eb6eeb6745d4903ea966e953b30861b0a4adfdb9da041632de"
+  },
+  {
+   "path": "backend/dataset/Metro_Interstate_Traffic_Volume.csv",
+   "bytes": 2856851,
+   "sha256": "8831604e6ea6e6b737fce013fc1f99108e806fba5b42db59eb84bd44b769f0c8"
+  },
+  {
+   "path": "backend/dataset/bhubaneswar_synthetic_traffic.csv",
+   "bytes": 2339335,
+   "sha256": "3c6eb6136a7674a70aeaa0a926508db776bb56cfb1a0655dcb01d1f3fa56c4c1"
+  },
+  {
+   "path": "backend/dataset/clean_traffic.csv",
+   "bytes": 5018959,
+   "sha256": "5f07dbca4ad0bd40b24bf1afbd874f0f7f6de33d1ba26ea81d4bb560b4ebc344"
+  },
+  {
+   "path": "backend/dataset/merged_traffic.csv",
+   "bytes": 2055483,
+   "sha256": "bad13cf8facafbf3969c7b5af06199c24805422ff5f97916ea3201b4c92d1547"
+  },
+  {
+   "path": "backend/dataset/processed_bhubaneswar_traffic.csv",
+   "bytes": 5887592,
+   "sha256": "00369f5c96650b69c54b3c8c79c7900860c8ba2cad99ad98a262fca69e509ac0"
+  },
+  {
+   "path": "backend/docker-compose.yml",
+   "bytes": 512,
+   "sha256": "3ee37da109532cb3cfd6c08f7d8125ebe3afcd3b1556bbee5f5353fdedd52167"
+  },
+  {
+   "path": "backend/forecasting/__init__.py",
+   "bytes": 85,
+   "sha256": "c4636d7808f449c93c7bda5463eb2cbe45b2a5c805b1d30b41b6b3cc72f7dec7"
+  },
+  {
+   "path": "backend/forecasting/forecast_pipeline.py",
+   "bytes": 14140,
+   "sha256": "86da43aa3d6381b2e901170a2170a08ac5b45d4b83fa16df75d6eb2b9d1b34f6"
+  },
+  {
+   "path": "backend/forecasting/forecast_service.py",
+   "bytes": 4789,
+   "sha256": "9285f578c4390af496ce224dd6e5f4180c207e35b4721357b6cfec0a2d6c091d"
+  },
+  {
+   "path": "backend/forecasting/sarima_runner.py",
+   "bytes": 5687,
+   "sha256": "3a104fcfbde678fb1f66c960dbe8ca41ac88260b0efa317a0c86932daef8abcc"
+  },
+  {
+   "path": "backend/generate_bhubaneswar_traffic.py",
+   "bytes": 15886,
+   "sha256": "3f7f029f2c84ffa241ed2befa2d01b8791d0999b40b77e617231a712857c47d3"
+  },
+  {
+   "path": "backend/merge_and_retrain.py",
+   "bytes": 673,
+   "sha256": "aabc42958570b426cfccf51116097613b4a0cce84cea24a44260fdb96b731359"
+  },
+  {
+   "path": "backend/ml_pipeline.py",
+   "bytes": 11898,
+   "sha256": "9d85e3455c1be881360db4261ac0854290658138d797c623029e87dfd646d907"
+  },
+  {
+   "path": "backend/model_backups/xgboost_backup/xgboost_30m_avg_speed.joblib",
+   "bytes": 122149,
+   "sha256": "3cf5366d66c8770edb2879f0a70dc46bca678abaf1d5d04c850bd1d6c5814e3b"
+  },
+  {
+   "path": "backend/model_backups/xgboost_backup/xgboost_30m_vehicle_count.joblib",
+   "bytes": 122147,
+   "sha256": "2ab1e5a90302e5890c4726b7557254b07dcc141bc50ccab879d1e2fb16c6791c"
+  },
+  {
+   "path": "backend/model_backups/xgboost_backup/xgboost_60m_avg_speed.joblib",
+   "bytes": 122149,
+   "sha256": "7852b1588bc0b1dadc7427629244ce10edb178332d08bf6ce39a0f6d60a89e5b"
+  },
+  {
+   "path": "backend/model_backups/xgboost_backup/xgboost_60m_vehicle_count.joblib",
+   "bytes": 122147,
+   "sha256": "26a4aabcffc5f12b7c71eb57ddeb696bd85f86bd0dd641f0c0ae22dc18d70e69"
+  },
+  {
+   "path": "backend/models/best_model.pkl",
+   "bytes": 51057587,
+   "sha256": "622bc7eaafc283e42ecb04e157484c900a5af3dfa86ff067887fad04d83189cd"
+  },
+  {
+   "path": "backend/models/feature_cols.pkl",
+   "bytes": 310,
+   "sha256": "67a86a54a66eda5514d35d5f3bc4da2fae2860e48b51ac501cc0978d2f0c1171"
+  },
+  {
+   "path": "backend/models/forecasting/random_forest_30m_avg_speed.joblib",
+   "bytes": 3950250,
+   "sha256": "952329a265bcdafcd1c4f5e62c47ec933e223062cca49d9aa9ae288613967b9c"
+  },
+  {
+   "path": "backend/models/forecasting/random_forest_30m_vehicle_count.joblib",
+   "bytes": 3966234,
+   "sha256": "9128a96e39cca46cf5fc31ccec9861c31cb045aec646e7d48aa29a2a17654b70"
+  },
+  {
+   "path": "backend/models/forecasting/random_forest_60m_avg_speed.joblib",
+   "bytes": 3938730,
+   "sha256": "5ff6550caf6340064cea780c50a4d4dfbef2ab03c56baba1fbfea1e559ecda9c"
+  },
+  {
+   "path": "backend/models/forecasting/random_forest_60m_vehicle_count.joblib",
+   "bytes": 4281450,
+   "sha256": "99df7c9597ec2db276dfbf897b4a65ba1386c79258a75a769c6241eac6ed8d53"
+  },
+  {
+   "path": "backend/models/forecasting/random_forest_classifier_30m.joblib",
+   "bytes": 1448490,
+   "sha256": "d11b606b9258a87e4305d42dbe70c8a8a362537931ca7b549011c26a75cdee5e"
+  },
+  {
+   "path": "backend/models/forecasting/random_forest_classifier_60m.joblib",
+   "bytes": 1487562,
+   "sha256": "addbfdaf672ad6fa0c540df16c2a8e64956a9379361f4619ea16378103a666aa"
+  },
+  {
+   "path": "backend/models/forecasting/xgboost_30m_avg_speed.joblib",
+   "bytes": 120393,
+   "sha256": "45be7fda965803533b6a3602ddfcf4a1773ae8d13b87086d52be5967c9764dbf"
+  },
+  {
+   "path": "backend/models/forecasting/xgboost_30m_vehicle_count.joblib",
+   "bytes": 120395,
+   "sha256": "2bbb2770f9e8d687ec30122dd0a28d4c278542eb1a31e9a5916825e52326e054"
+  },
+  {
+   "path": "backend/models/forecasting/xgboost_60m_avg_speed.joblib",
+   "bytes": 120393,
+   "sha256": "a032a9db5ce75f9d31d9ed771b79c1f16c9004dcc5c0b076e142eac966f099ea"
+  },
+  {
+   "path": "backend/models/forecasting/xgboost_60m_vehicle_count.joblib",
+   "bytes": 120395,
+   "sha256": "f01250efb23ed167757a79f6e951d4cecf54d3227d00917d87ecb4d378d4331b"
+  },
+  {
+   "path": "backend/models/location_encoder.pkl",
+   "bytes": 610,
+   "sha256": "6081d80b5e492428b9d31389281a28cb86732e0229fe9eb0173e320d9dff3fad"
+  },
+  {
+   "path": "backend/models/model_metadata.json",
+   "bytes": 2433,
+   "sha256": "fd3d0b36ced62e67c3405c8830e7890b8533f51e16df0a06d4ea8db9881656c3"
+  },
+  {
+   "path": "backend/outputs/confusion_matrix.png",
+   "bytes": 40040,
+   "sha256": "669a9a61e8f7d1ebf5fd0b8a6fe6fad51f630b5c38010b94bf9824620d795eab"
+  },
+  {
+   "path": "backend/outputs/confusion_matrix_persistence_baseline.png",
+   "bytes": 39419,
+   "sha256": "90fdb9bc92fe374c87aa1dd6c0b33f1946b97ecb02df161868c402f51c0ead27"
+  },
+  {
+   "path": "backend/outputs/confusion_matrix_random_forest.png",
+   "bytes": 40040,
+   "sha256": "669a9a61e8f7d1ebf5fd0b8a6fe6fad51f630b5c38010b94bf9824620d795eab"
+  },
+  {
+   "path": "backend/outputs/confusion_matrix_xgboost.png",
+   "bytes": 38337,
+   "sha256": "49dd0515c21c8e5bdaf817662cfd7ceaf90319ea8d5dc4c9302017fb8c80f73e"
+  },
+  {
+   "path": "backend/outputs/congestion_distribution.png",
+   "bytes": 20309,
+   "sha256": "bda536b0f6e0fe44c899c03ad80eedfbae34a434fc7f4d9786c1823fcb7cef41"
+  },
+  {
+   "path": "backend/outputs/congestion_network.png",
+   "bytes": 62475,
+   "sha256": "595984be10a603f942aa72d9287d39e95818fbb892e511f304b3f20047669dd5"
+  },
+  {
+   "path": "backend/outputs/forecasting/confusion_matrix_classification_30m.png",
+   "bytes": 33844,
+   "sha256": "ba320e29cdbb6313c96e5b9f60a3c912e7b30a3151d8c4419f07fb789572a245"
+  },
+  {
+   "path": "backend/outputs/forecasting/confusion_matrix_classification_60m.png",
+   "bytes": 34263,
+   "sha256": "62185a4c373280969c2b97360d21b93bdf54203fb9e423e66fcdc96d68da7f7c"
+  },
+  {
+   "path": "backend/outputs/forecasting/forecast_comparison_30m_avg_speed.png",
+   "bytes": 286491,
+   "sha256": "4b3921580d89673aed19f4b5501bde65d1377d73cd30c1f9111eef84d8ae20ba"
+  },
+  {
+   "path": "backend/outputs/forecasting/forecast_comparison_30m_vehicle_count.png",
+   "bytes": 288196,
+   "sha256": "0789d2a690a50f8ff520fe8bc29e733a54f794b866f555e9d3f5cc1d681b7664"
+  },
+  {
+   "path": "backend/outputs/forecasting/forecast_comparison_60m_avg_speed.png",
+   "bytes": 294375,
+   "sha256": "1b2382a4bc596eb698af93c99f496ccc1cb2fe0875845b1ee3dcf55f240e895d"
+  },
+  {
+   "path": "backend/outputs/forecasting/forecast_comparison_60m_vehicle_count.png",
+   "bytes": 299240,
+   "sha256": "92ca780294efaa6848464b7b3d1c75f9d6eda078cb72356c8bd25d5dbfcdcc83"
+  },
+  {
+   "path": "backend/outputs/forecasting/forecast_metrics.json",
+   "bytes": 8002,
+   "sha256": "82fc14f6e751e9517c43d9e7a1b023526d553a0d2a4e443f6ebe1250559adb88"
+  },
+  {
+   "path": "backend/outputs/forecasting/sarima_metrics.json",
+   "bytes": 2066,
+   "sha256": "f72743fbb9323df0d915774c8dd8c364bb824b5f6a4f34437f68a75d41a21c35"
+  },
+  {
+   "path": "backend/outputs/hourly_congestion_sweep.png",
+   "bytes": 30304,
+   "sha256": "b07539d03595cce3cd94434615e2a3b8157f85ef36b650a264b5ff3fd7404d80"
+  },
+  {
+   "path": "backend/outputs/model_comparison.png",
+   "bytes": 42185,
+   "sha256": "4e704a2646eed268061ddc5cdab66df254a227568aba42959043d890a95e1bdc"
+  },
+  {
+   "path": "backend/outputs/model_comparison_summary.csv",
+   "bytes": 593,
+   "sha256": "0a2a667bc36b0218b447a622fe0691d3bd9991a7696509d84103421033946ef5"
+  },
+  {
+   "path": "backend/outputs/network.png",
+   "bytes": 55648,
+   "sha256": "933bf222297b5f879848bd5cd20d1df36f69146c13566812486ae8ecf01d60f6"
+  },
+  {
+   "path": "backend/outputs/phase1_data_summary.json",
+   "bytes": 527,
+   "sha256": "96baf36617f452a37a758224ea8dfe63f0ae23db984f8ec305e1bdcfa24e3df2"
+  },
+  {
+   "path": "backend/outputs/phase1_metrics.json",
+   "bytes": 13556,
+   "sha256": "151b6a800dab10513f02f37ce65bbabd8f7d97c44f066e0ae5b1815c32b36081"
+  },
+  {
+   "path": "backend/outputs/traffic_by_day.png",
+   "bytes": 27770,
+   "sha256": "7520e27d35daed4f965aaf668ca50ca5c17ba07f3ea3bc1aefc7adac7a793664"
+  },
+  {
+   "path": "backend/outputs/traffic_by_hour.png",
+   "bytes": 30668,
+   "sha256": "6d4338c67091ca204d49ab1936a3c535d5ab3807428e16665b5a6a675450aa11"
+  },
+  {
+   "path": "backend/outputs/traffic_heatmap.png",
+   "bytes": 41066,
+   "sha256": "2e1bedf05bd280fd6c0b5467d4d66783a3b396e434a2165e825bdad60517243c"
+  },
+  {
+   "path": "backend/phase1_preprocess.py",
+   "bytes": 5234,
+   "sha256": "cf8804d7b28b68b07eb346ea3fc6b1fd58a95cdcb6afd0af36ee354f16a7a125"
+  },
+  {
+   "path": "backend/phase2_train.py",
+   "bytes": 14109,
+   "sha256": "d81a43030501f4e4e57a830ff9f3efdf9572ba54c07fe712e2af91e0c058639b"
+  },
+  {
+   "path": "backend/phase3_graph_simulate.py",
+   "bytes": 6007,
+   "sha256": "d97e77946f1ced081d5c403e9f0b131bd3cf13c5916145248baa2a522ea0c259"
+  },
+  {
+   "path": "backend/pytest.ini",
+   "bytes": 201,
+   "sha256": "334d3d8576170eea6faf7b53a0e41f0dd2ce3accc85a0442ebeabd27cfe2385e"
+  },
+  {
+   "path": "backend/requirements.txt",
+   "bytes": 894,
+   "sha256": "6960b7d76b275aba6a64b7a39f5485538c287c5923536361a9a2261a5da53916"
+  },
+  {
+   "path": "backend/routing/__init__.py",
+   "bytes": 56,
+   "sha256": "526fc890ab486007c1cce31f2f078a91b26767b2c02ef6cd5b4fae4524d1a393"
+  },
+  {
+   "path": "backend/routing/engine.py",
+   "bytes": 16024,
+   "sha256": "f078f6d38077c6ff399827ce81737ea2e4dc438539b9e77b20707479bf822011"
+  },
+  {
+   "path": "backend/routing/flow_matching.py",
+   "bytes": 13213,
+   "sha256": "267b72b75e0edeec9f3f4775b2548d9a58c6dd053a8d4243d87165937a36e01f"
+  },
+  {
+   "path": "backend/routing/geocoding.py",
+   "bytes": 18422,
+   "sha256": "737f28c5f7420330658efcb8d5f2155d500846993d3ce8d0eac7e06c6cb7a042"
+  },
+  {
+   "path": "backend/routing/graph_io.py",
+   "bytes": 3735,
+   "sha256": "dc3f5681439e99772d3e8cd75a7c9bcd310159326c8692ee757f8f070e617dac"
+  },
+  {
+   "path": "backend/routing/impact_rules.py",
+   "bytes": 9611,
+   "sha256": "5ba7cbe4e6cac0199ec9e0d20f5a63facef086b951a9fe8a7bb36489414d971d"
+  },
+  {
+   "path": "backend/routing/incident_impact.py",
+   "bytes": 3307,
+   "sha256": "34651112206ff31a8d5210eddcafbe8785dbeebf7e9a82065bea3f11ee05f96d"
+  },
+  {
+   "path": "backend/routing/incident_manager.py",
+   "bytes": 18355,
+   "sha256": "34187a0cc912a28cb4dd7d98506d5475286e18e84a84f7f27695dde144d2a5e6"
+  },
+  {
+   "path": "backend/routing/incident_matching.py",
+   "bytes": 14434,
+   "sha256": "bf857fbdf8bcc9f5bf57b402f6c26b6518907e94165b2d9dc05ad0010376e8b5"
+  },
+  {
+   "path": "backend/routing/labels.py",
+   "bytes": 5546,
+   "sha256": "4b368910301a3f0ac28e1a01899dd7b6aca5a9d3c5a8be464d18b1e2d5a091c4"
+  },
+  {
+   "path": "backend/routing/network_geometry.py",
+   "bytes": 1982,
+   "sha256": "ecf004d72f8765a2fc9524a7c223566b482acee35cd606d7db078a0b05d11fcb"
+  },
+  {
+   "path": "backend/routing/osm_network.py",
+   "bytes": 15483,
+   "sha256": "3dd69057e6185a5663da596b4f4f3292cbe7f6eea282267c3a591c198e82a33e"
+  },
+  {
+   "path": "backend/routing/route_optimizer.py",
+   "bytes": 23412,
+   "sha256": "0e042bf8b2938a946e543dfc2a2fb6625045d6a84f48f50fc8c113d167ac58b7"
+  },
+  {
+   "path": "backend/routing/tomtom_routing.py",
+   "bytes": 11836,
+   "sha256": "19fd22fa9c7eb0a9fef7cbda3eeae8d4df92f44a2efb461caea6d8aad5511ee4"
+  },
+  {
+   "path": "backend/routing/traffic_routing.py",
+   "bytes": 5447,
+   "sha256": "611c0bd25d2b26a3f3a7b1dbfe23a44e1e3a4d78339103b25f6437f268419905"
+  },
+  {
+   "path": "backend/screenshots/README.md",
+   "bytes": 2047,
+   "sha256": "9405d5140e4ac383c69041dc87bb707562a40c4fc605fbb20ad122857c329761"
+  },
+  {
+   "path": "backend/screenshots/dark_theme/c_dark_01_overview.png",
+   "bytes": 245914,
+   "sha256": "51d8a84f4af16f75f820226d0e19658d765accfb4741b8579dbced012a0430dc"
+  },
+  {
+   "path": "backend/screenshots/dark_theme/c_dark_02_traffic_map.png",
+   "bytes": 222440,
+   "sha256": "ec8c5d4962a466908b5ee738d962ae36034c2856b5bd3a4ceeb02a3932fa700c"
+  },
+  {
+   "path": "backend/screenshots/dark_theme/c_dark_03_route_planner.png",
+   "bytes": 241451,
+   "sha256": "0dbb5f3cad41e151b848895868e94e4661fdd6607e72f50fcf23facfd8e7955a"
+  },
+  {
+   "path": "backend/screenshots/default_state/a_01_overview.png",
+   "bytes": 254814,
+   "sha256": "6e7fd3d5dac9ea0105ebaaafe965af4050651cb9595b4abdca03f712ae32ef31"
+  },
+  {
+   "path": "backend/screenshots/default_state/a_02_traffic_map.png",
+   "bytes": 219694,
+   "sha256": "97a5b525e7b62a776579a88b3ad7f964f910bf7f3891144f7bfd81812b92adb4"
+  },
+  {
+   "path": "backend/screenshots/default_state/a_03_prediction.png",
+   "bytes": 285710,
+   "sha256": "22b75fa1f2a6b1d1fe425c5b40be1a91fe0291b84f5b14b39f1ce7fcc78b969b"
+  },
+  {
+   "path": "backend/screenshots/default_state/a_04_forecasting.png",
+   "bytes": 209536,
+   "sha256": "ae75e5cc0878c34c328d592f67ae26ca758911884613756c8b63729413eca99d"
+  },
+  {
+   "path": "backend/screenshots/default_state/a_05_route_planner.png",
+   "bytes": 239092,
+   "sha256": "d808893796bb6717a78c333ef12a61d61ecdcef220b7a118ea30d8d6c1202441"
+  },
+  {
+   "path": "backend/screenshots/default_state/a_06_incident_lab.png",
+   "bytes": 130453,
+   "sha256": "dc3e87bf77cddfafe72daa9c331519df0f7097f8378d41d2c67041e92bf944f9"
+  },
+  {
+   "path": "backend/screenshots/default_state/a_07_weather.png",
+   "bytes": 74628,
+   "sha256": "db6dcb9798e4df779d5e697f4aaae0f276c8c4663e03986b19e1fd4fb4275f0b"
+  },
+  {
+   "path": "backend/screenshots/default_state/a_08_copilot.png",
+   "bytes": 95690,
+   "sha256": "a2e48d3793c91e305f2594154c54351a210968ddd99bb958b33d0fbcfe63e69a"
+  },
+  {
+   "path": "backend/screenshots/default_state/a_09_model_evaluation.png",
+   "bytes": 205516,
+   "sha256": "79447e9fa7361da834cc10c7096a807687fb5651e5b445d97f5f367ce8c357b3"
+  },
+  {
+   "path": "backend/screenshots/osm_code_path_TEST_FIXTURE_ONLY/b_osm_FIXTURE_TESTONLY_01_overview.png",
+   "bytes": 252019,
+   "sha256": "46a11d4775faa57332032e1863079465a2b225acb71d24a6f7e1b03dc63fc5a2"
+  },
+  {
+   "path": "backend/screenshots/osm_code_path_TEST_FIXTURE_ONLY/b_osm_FIXTURE_TESTONLY_02_traffic_map.png",
+   "bytes": 163190,
+   "sha256": "b3ca2d58bcfac2978d17458fa77250437c6c211f5852c89740404833035a2719"
+  },
+  {
+   "path": "backend/screenshots/osm_code_path_TEST_FIXTURE_ONLY/b_osm_FIXTURE_TESTONLY_03_route_planner.png",
+   "bytes": 214135,
+   "sha256": "148d73283f4eaa5d839db887d81ac5bbae1274b0cb9ae60b3607ee74c18319f7"
+  },
+  {
+   "path": "backend/screenshots/osm_code_path_TEST_FIXTURE_ONLY/b_osm_FIXTURE_TESTONLY_04_map_click_route.png",
+   "bytes": 199608,
+   "sha256": "042e17efbaa05cf6bb34baec3eb6f3bf613bd280ad46c234a095b23c21ab9faf"
+  },
+  {
+   "path": "backend/scripts/download_osm.py",
+   "bytes": 1420,
+   "sha256": "e94b71460d56b66aaa8d1327b3355ca99ffd3715364d82e0b282fa434f2f6e15"
+  },
+  {
+   "path": "backend/scripts/generate_manifest.py",
+   "bytes": 2243,
+   "sha256": "666a812a5c6dc099e0321eafe630229d8bc802bee31d7a66ae1c37364fe570f8"
+  },
+  {
+   "path": "backend/scripts/live_test_here.py",
+   "bytes": 7761,
+   "sha256": "1ba46ab7220991d90188d7549020c4ea070d929886fa48165b7a724577e1ce9e"
+  },
+  {
+   "path": "backend/scripts/render_metric_tables.py",
+   "bytes": 5732,
+   "sha256": "68415d5f84ae8bdea13bcd0a57ca8685e7547c213e627eac7dbf2c09587eb94e"
+  },
+  {
+   "path": "backend/scripts/verify_manifest.py",
+   "bytes": 2300,
+   "sha256": "df1229382ffbce4aa8c9f100ca5b502c9cabcde4d3b9b9edbdba1b054a2b98bf"
+  },
+  {
+   "path": "backend/services/__init__.py",
+   "bytes": 54,
+   "sha256": "bf29c9cb4d874c3b4d8fdbf91e774251add10dee1f32ec149df5d31b356bdc79"
+  },
+  {
+   "path": "backend/services/incident_sync.py",
+   "bytes": 7306,
+   "sha256": "6bb2d5c39d61497b39d8cc9ac4988e891c02bf62bd476f2c6030152f232d6996"
+  },
+  {
+   "path": "backend/services/osrm_service.py",
+   "bytes": 1316,
+   "sha256": "a871d62f0aec757eca14330879d29ac3531bfa997d9892b2f8bd3562fcc9122a"
+  },
+  {
+   "path": "backend/services/route_planning.py",
+   "bytes": 6506,
+   "sha256": "2dbdc548d7eac88ef92dca261732a85dd0b099fec35f7a6863386f763a0d8058"
+  },
+  {
+   "path": "backend/services/tomtom_incidents.py",
+   "bytes": 24568,
+   "sha256": "9a8119f776bba525a73421633db091c32878093bc7199f7a7525fd8dc64221ee"
+  },
+  {
+   "path": "backend/services/tomtom_service.py",
+   "bytes": 3121,
+   "sha256": "c2c923ced568dcc95237ac11f44afc87337c232e5a297dfa7d7f0e49e9caf3b1"
+  },
+  {
+   "path": "backend/services/traffic_providers/__init__.py",
+   "bytes": 1890,
+   "sha256": "2a36c4e8de67cff5c63ad2961d8f222cfa2ff9174ef68785edaae7bf69faaeed"
+  },
+  {
+   "path": "backend/services/traffic_providers/base.py",
+   "bytes": 7265,
+   "sha256": "746f207c282fe58eea8c394ad7f6a0a5e06e14887b7c110b729185daf42042d0"
+  },
+  {
+   "path": "backend/services/traffic_providers/here_provider.py",
+   "bytes": 14028,
+   "sha256": "9bed71ad6cd21e3751c30009e6bb1d488057e8a1d17ada17ab57a3a5c875755a"
+  },
+  {
+   "path": "backend/services/traffic_providers/tomtom_provider.py",
+   "bytes": 3966,
+   "sha256": "6263edc1d439dd874b08e3a13940a45223bfecca79fe5ac7a4195e963a3f6a35"
+  },
+  {
+   "path": "backend/services/traffic_service.py",
+   "bytes": 5936,
+   "sha256": "d478ed1ad70a76a270e3231b53899570354c2e43085266b96b3932ababd3e8e2"
+  },
+  {
+   "path": "backend/services/weather_service.py",
+   "bytes": 5281,
+   "sha256": "992a25ddc04e17f69871c28965f05bb1b04ceb66c80cc8f916c718cef95871ce"
+  },
+  {
+   "path": "backend/simulation/__init__.py",
+   "bytes": 64,
+   "sha256": "69169546127d8ea9eb2e59bed9f5eb6a7008ff226e3561b17bb8d97833517724"
+  },
+  {
+   "path": "backend/simulation/traffic_simulator.py",
+   "bytes": 1903,
+   "sha256": "1e718475a753d002c03f2343adfa2f4db8d63896f604be05b262ff4c7b985d78"
+  },
+  {
+   "path": "backend/simulation_engine.py",
+   "bytes": 24168,
+   "sha256": "e6580c428a65ef02f1dd6d778fcd424cf6fd92434c49178ed7ef0092488f2588"
+  },
+  {
+   "path": "backend/tests/conftest.py",
+   "bytes": 659,
+   "sha256": "2a676fb2306f63e4dad7546ac22cfdc20bcd7a1d5de5ebff512261396d05751d"
+  },
+  {
+   "path": "backend/tests/fixtures/mini_grid.osm",
+   "bytes": 3259,
+   "sha256": "1b3f5430e3d69b965408d2ca62010f44301daa3fdd3f379c4239680c77cd5816"
+  },
+  {
+   "path": "backend/tests/incident_helpers.py",
+   "bytes": 5939,
+   "sha256": "291a2e6d2b129c502ca11b0941aaee1ed2b8c9db6ba6807f30f1c884f651974f"
+  },
+  {
+   "path": "backend/tests/mock_osm_server.py",
+   "bytes": 3399,
+   "sha256": "6c136dc8e9be8dca56905fa2fbb170ed58cb7e53d1860001689dcabe35181062"
+  },
+  {
+   "path": "backend/tests/test_api.py",
+   "bytes": 4916,
+   "sha256": "374b090ba9107a84f832f270238791ac89cd95378668e52875ad761e1daa6e79"
+  },
+  {
+   "path": "backend/tests/test_artifact_compat.py",
+   "bytes": 3438,
+   "sha256": "6ce511770dd04ae55d0ceae85d9a10d83239568166dcd5fa76cceaa800957b15"
+  },
+  {
+   "path": "backend/tests/test_copilot.py",
+   "bytes": 881,
+   "sha256": "2484869ad16eae685c2babe785b33f0e64dad641a7167ed8ef91dc3fb7d1430b"
+  },
+  {
+   "path": "backend/tests/test_copilot_incidents.py",
+   "bytes": 6648,
+   "sha256": "ff10efdc089016bb4a2342eb1a566ea945c8c41b3af914423371e3b0154e991c"
+  },
+  {
+   "path": "backend/tests/test_geocoding.py",
+   "bytes": 4397,
+   "sha256": "6b17552a06fe67ba7835ccf931bd82cd1a3d283456b71d66a659be93411dbc0c"
+  },
+  {
+   "path": "backend/tests/test_here_provider.py",
+   "bytes": 11967,
+   "sha256": "f9274c8f4249d1b649504f467e1bef3916a6ad3253d8e7dc8f69c97b59ac9cf0"
+  },
+  {
+   "path": "backend/tests/test_incident_api.py",
+   "bytes": 10792,
+   "sha256": "f05008a7b299c39a6db03eaa5498e7241e866ff97f6a0f5a30aedbd6a70d2731"
+  },
+  {
+   "path": "backend/tests/test_incident_engine.py",
+   "bytes": 15408,
+   "sha256": "e8456dfbbcd27748f3295016498fb251892281e682862a738f54322f18250f57"
+  },
+  {
+   "path": "backend/tests/test_incident_matching.py",
+   "bytes": 6279,
+   "sha256": "60400b9c807b42c572200b27ad6254d3f86d8372feb4b7b70f2dd60e5da5e446"
+  },
+  {
+   "path": "backend/tests/test_incident_real_osm.py",
+   "bytes": 4804,
+   "sha256": "23677765e6727524dc05ef1dd06a5bd2b3cdd001f38c5c52a87c97c562b514a7"
+  },
+  {
+   "path": "backend/tests/test_incident_routing.py",
+   "bytes": 8882,
+   "sha256": "58d07527ff536aef2dc94e7a94cdc6a67b67161432a6c75f940ec5fce9edb0b2"
+  },
+  {
+   "path": "backend/tests/test_incident_sync.py",
+   "bytes": 7974,
+   "sha256": "6cd80b2f3f31d1b2c06d38e18f8ff2c981a3212747bdf232fadb848a23cc0bc4"
+  },
+  {
+   "path": "backend/tests/test_ml_pipeline.py",
+   "bytes": 4106,
+   "sha256": "af3bb7f602f6fc06beed21ee33cdaddc572ec542497692f0deb97caad1028112"
+  },
+  {
+   "path": "backend/tests/test_osm_and_ui.py",
+   "bytes": 11381,
+   "sha256": "cb51f3a58a92d9ae444271ad6abb28aa5137ec01700dee4c4768c1d9262396ca"
+  },
+  {
+   "path": "backend/tests/test_osm_download_cache.py",
+   "bytes": 4307,
+   "sha256": "79d8bbd06d4bb9f26d7a18a2d4f3f5091925127fa4c3af022095dac050a8af28"
+  },
+  {
+   "path": "backend/tests/test_plan_api.py",
+   "bytes": 5757,
+   "sha256": "88f82c713cae75f78f0e0574cab4b97b403c285a9efe4b26fcd512e35fa2c95a"
+  },
+  {
+   "path": "backend/tests/test_react_frontend_integration.py",
+   "bytes": 4297,
+   "sha256": "ef5ea5405bea617a372efa9ab0fa21218c076115406daea8a494889b1d89d3b5"
+  },
+  {
+   "path": "backend/tests/test_route_planning.py",
+   "bytes": 8232,
+   "sha256": "5d73e4c021d06da8e282b7480c4e8c485b2f8cafbfbbc5262483597266c901d6"
+  },
+  {
+   "path": "backend/tests/test_routing.py",
+   "bytes": 2437,
+   "sha256": "ffe23fad2544e7e8b32a9af325a83dcceb1934d21dc6dbd3c5443e5e9ca8a036"
+  },
+  {
+   "path": "backend/tests/test_tomtom.py",
+   "bytes": 2055,
+   "sha256": "024d67d2a76ba83eb220d289b63f80686d90c5b7447e3998beb563ed5bc09806"
+  },
+  {
+   "path": "backend/tests/test_tomtom_incidents.py",
+   "bytes": 9477,
+   "sha256": "92664bbfca72212020e844178243058d7b4e479a0080ad067ca6c402da30674b"
+  },
+  {
+   "path": "backend/tests/test_tomtom_incidents_live.py",
+   "bytes": 2132,
+   "sha256": "6c5fea6a92a7e1c3ff21a2abd4a6ddb42bc8f11d2c43e6bfcae76c30e9fa8347"
+  },
+  {
+   "path": "backend/tests/test_tomtom_routing.py",
+   "bytes": 9682,
+   "sha256": "eccad3883c0a58f3fb243d58c2a2218a09474bc611b136e90a135979e2aa36ee"
+  },
+  {
+   "path": "backend/tests/test_traffic_provider_api.py",
+   "bytes": 5745,
+   "sha256": "2f5c93fbbd712383f7bde20729e9e80ed6146d303314158ba2c36f12b123c410"
+  },
+  {
+   "path": "backend/tests/test_traffic_routing_provider.py",
+   "bytes": 6902,
+   "sha256": "d15fcbffc7103139aa23e56d73a0920da221ad4d2d322563df26b6e252865d56"
+  },
+  {
+   "path": "backend/tests/test_weather_and_forecasting.py",
+   "bytes": 4663,
+   "sha256": "4b99e93f0b4c312bda13297c22f198407d8d93f4bb3f58b2dda878ebb997c38a"
+  },
+  {
+   "path": "backend/tools/screenshot_capture/click_origin_destination.mjs",
+   "bytes": 5710,
+   "sha256": "98b94a37ca268f5b59763ee62974f5b9fc0aad33527ecae8b6beb954c30a6f7c"
+  },
+  {
+   "path": "backend/tools/screenshot_capture/shoot.mjs",
+   "bytes": 5283,
+   "sha256": "b8cc94a236d7be706c832e70d91f1fd4607271703683bd46a7b521321acfb1c9"
+  },
+  {
+   "path": "backend/ui/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "backend/ui/context.py",
+   "bytes": 3541,
+   "sha256": "4102ada0924e3155f976f552c34f3100ad7887db989c17cd14a802673745cbde"
+  },
+  {
+   "path": "backend/ui/maps.py",
+   "bytes": 14336,
+   "sha256": "2842610f74e725a15d66ba9378ee76b8cfd72a95ea3ab5c1cc8614769077ce52"
+  },
+  {
+   "path": "backend/ui/pages/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "backend/ui/pages/copilot.py",
+   "bytes": 2124,
+   "sha256": "bf6786eebd82ebf063339cfae83b91346af983f96177cfad6da299d1e557ab10"
+  },
+  {
+   "path": "backend/ui/pages/evaluation.py",
+   "bytes": 2047,
+   "sha256": "13387018fe3c676ffda685f1468cad60e3fff49b290c3104565bb9fbef8b746a"
+  },
+  {
+   "path": "backend/ui/pages/forecasting.py",
+   "bytes": 6133,
+   "sha256": "e0e9e5c33772d29082784908b40d16efb5e63cb0d8b56326bf32ab0c6f07a2a1"
+  },
+  {
+   "path": "backend/ui/pages/incidents.py",
+   "bytes": 3323,
+   "sha256": "14603598a7a674fc93660cc26c9be09194cbf0c8af701e271b4f3a34ca85d878"
+  },
+  {
+   "path": "backend/ui/pages/map_page.py",
+   "bytes": 9646,
+   "sha256": "4a9e0e1ba6e0f526e65d546aa66639e9236a9c79111f61c506ef56d3d2c1ce74"
+  },
+  {
+   "path": "backend/ui/pages/overview.py",
+   "bytes": 7719,
+   "sha256": "0621d496b7bbbdd90b1126a37955bc276e023754f4d6e4ca059ce958ff614cf8"
+  },
+  {
+   "path": "backend/ui/pages/prediction.py",
+   "bytes": 8505,
+   "sha256": "042688383935eff95f3744dbeb69e54f4faba9042d5ac636b14eeca52df3b1ee"
+  },
+  {
+   "path": "backend/ui/pages/route_planner.py",
+   "bytes": 10816,
+   "sha256": "d2102cea38ed058c8d0ae2e0ebf6c75111d3e0d7fe226d5a9f48a63a6af8c6dd"
+  },
+  {
+   "path": "backend/ui/pages/weather.py",
+   "bytes": 1783,
+   "sha256": "84086edae55e8f154cd11792097a33747440e2663c0211cf8de1c2f5751b7db9"
+  },
+  {
+   "path": "backend/ui/route_helpers.py",
+   "bytes": 3327,
+   "sha256": "b000947434850863b379820e8e3c8bad2dbf722f67a4f300f1dc1bec8010bddd"
+  },
+  {
+   "path": "backend/ui/status.py",
+   "bytes": 2216,
+   "sha256": "7a4a28f0108bff20dc78be8f067b4cacbeb8c841b1ea41f919eefd647c4535ea"
+  },
+  {
+   "path": "backend/ui/theme.py",
+   "bytes": 6088,
+   "sha256": "5ed7adb60c45d7a29a323b847d5f9f4ffe9a82c769e6435fb02656e6f68ac982"
+  },
+  {
+   "path": "backend/verification/api_endpoint_execution.log",
+   "bytes": 3077,
+   "sha256": "f98d3e183f4b9ef7b487d9477b3e37e5460ce215b8d92adb5448f799cae9740f"
+  },
+  {
+   "path": "backend/verification/api_endpoint_execution.py",
+   "bytes": 3191,
+   "sha256": "4f5b22467e84844e96b8587c0f1f47e0814852e46299e6610c81463a036a7f41"
+  },
+  {
+   "path": "backend/verification/api_results.json",
+   "bytes": 45505,
+   "sha256": "d9f0412fa150926a395d58403c73e6026efaa5c3fa674d23b6facc4fa5765e3d"
+  },
+  {
+   "path": "backend/verification/artifact_integrity.log",
+   "bytes": 1361,
+   "sha256": "782a828d8befe85407d26db323bb4c6988de6a77e20f0bfa74ecc099424c7b5c"
+  },
+  {
+   "path": "backend/verification/artifact_integrity.py",
+   "bytes": 1412,
+   "sha256": "2614b21cfb472f01ab3dd56f4c4b1e815f7be37dc7f22c20fc36225eeb859d5c"
+  },
+  {
+   "path": "backend/verification/artifact_integrity_release.log",
+   "bytes": 1362,
+   "sha256": "5e668d9a70fb5788e84f88345b8dbbc3a0ad85e59ae58a920f53b8a42fd49e9e"
+  },
+  {
+   "path": "backend/verification/compileall.log",
+   "bytes": 17,
+   "sha256": "f8ebc65bcf3d22d004eddde09612fcff2d08ea954cb441132209d74adf4b6451"
+  },
+  {
+   "path": "backend/verification/compileall_final.log",
+   "bytes": 17,
+   "sha256": "f8ebc65bcf3d22d004eddde09612fcff2d08ea954cb441132209d74adf4b6451"
+  },
+  {
+   "path": "backend/verification/compileall_release.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/compileall_final.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/exit_codes.txt",
+   "bytes": 32,
+   "sha256": "110108d62540fc32ea572c755ef4464cca23da448b1db5b11d1282e41e5256b7"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/fresh_extract_compileall.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/fresh_extract_pytest.log",
+   "bytes": 99,
+   "sha256": "65f5a66e57b0510e468befff5d315d3d5c5f5b478375e9a9701a74e2ada67a1f"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/optional_runtime_exit_codes.txt",
+   "bytes": 43,
+   "sha256": "f754fc220989f5f12eb20103d385b9c1714d52cb748828f395ba3127fb51d2dc"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/pip_install_optional_dependencies.log",
+   "bytes": 421,
+   "sha256": "efccc0ce5cf2ef3ee7a942c45ef63d9978e2fc3ec8ddc7641ef63b520fcbe43c"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/pytest_final.log",
+   "bytes": 99,
+   "sha256": "fccbb89da2b1a03f78331c39f1394535b7fdda2e5d5cf8b96b7b5becfe0ef122"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/runtime_probe.log",
+   "bytes": 1918,
+   "sha256": "4bee1e0e07920f62af52131f4cdfd38d7295efb664ff7c5c73afbf271eea8348"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/runtime_probe.py",
+   "bytes": 2443,
+   "sha256": "5d0d570663f4a06c3ccc5862d47465c6a3b9f64a1d6da7b78b0d578816710a5c"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/streamlit_launch_attempt.log",
+   "bytes": 50,
+   "sha256": "5f54144bf4e6a0f6419118f87eed502aff4da94fcb5e233c9c48b43e6603f704"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/uvicorn_health.json",
+   "bytes": 821,
+   "sha256": "b9c3064e3f8ca311abb7d4b87961a5227e79c035d63230e094a81e703df5db6f"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/uvicorn_http_results.txt",
+   "bytes": 47,
+   "sha256": "16797679c02a730e3f4606b886216d49cc3dd871978b815b8f9fd536cb8f05fb"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/uvicorn_startup.log",
+   "bytes": 564,
+   "sha256": "6024210c7f71bffabfce4b6fc9808ab8035ffcb2520200b4edfe72425a197f5a"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/uvicorn_tomtom.json",
+   "bytes": 101,
+   "sha256": "2b54106d54217b3e7b81bfb67c2ded81d2813b2b17809155d6d2c5819890056f"
+  },
+  {
+   "path": "backend/verification/deployment_readiness/uvicorn_weather.json",
+   "bytes": 227,
+   "sha256": "80af0a6a73d0225fefd6fc9ba9bdf538c6601de4dc31564d2ef0423ea1bf4a68"
+  },
+  {
+   "path": "backend/verification/environment_and_dashboard.log",
+   "bytes": 3362,
+   "sha256": "e3f5db9cbcf56ca1d50f23b9a34f1cfe17c9102e42a703e422e5e77e01430303"
+  },
+  {
+   "path": "backend/verification/forecast_pipeline.log",
+   "bytes": 7851,
+   "sha256": "49e003155239d5429e35b914d5a181339e803be676e9c07f46ea9fad929d7873"
+  },
+  {
+   "path": "backend/verification/forecast_pipeline_rerun.log",
+   "bytes": 7852,
+   "sha256": "8cba273a289439567829df07c6db3a4cac53eb035068bd1b4513ed5b30653573"
+  },
+  {
+   "path": "backend/verification/phase1_hash_after.txt",
+   "bytes": 187,
+   "sha256": "0ab62f051f6326b74e674d42c63584ed6dfa5902f77159b52bdce1cf6ed7915a"
+  },
+  {
+   "path": "backend/verification/phase1_hash_before.txt",
+   "bytes": 187,
+   "sha256": "0ab62f051f6326b74e674d42c63584ed6dfa5902f77159b52bdce1cf6ed7915a"
+  },
+  {
+   "path": "backend/verification/phase1_preprocess.log",
+   "bytes": 1045,
+   "sha256": "89ed48f46835c5701c424fee787e2453bdddfdb9cb9722553ba6546a5e295b91"
+  },
+  {
+   "path": "backend/verification/phase1_preprocess_rerun.log",
+   "bytes": 1045,
+   "sha256": "89ed48f46835c5701c424fee787e2453bdddfdb9cb9722553ba6546a5e295b91"
+  },
+  {
+   "path": "backend/verification/phase2_reproducibility_rerun.log",
+   "bytes": 1805,
+   "sha256": "790f4e6d09df471830ec1c6432f3c43754b9e5ff6ec1504f5a2ebdb80f29eebe"
+  },
+  {
+   "path": "backend/verification/phase2_train.log",
+   "bytes": 1805,
+   "sha256": "790f4e6d09df471830ec1c6432f3c43754b9e5ff6ec1504f5a2ebdb80f29eebe"
+  },
+  {
+   "path": "backend/verification/phase2_train_rerun.log",
+   "bytes": 1805,
+   "sha256": "790f4e6d09df471830ec1c6432f3c43754b9e5ff6ec1504f5a2ebdb80f29eebe"
+  },
+  {
+   "path": "backend/verification/pytest_after_fixes.log",
+   "bytes": 99,
+   "sha256": "733ea813e4f9cbb512ec755c4124475d65926befeaa9f5d80ae5a3fa9ed57acd"
+  },
+  {
+   "path": "backend/verification/pytest_final.log",
+   "bytes": 99,
+   "sha256": "1a694485f70c0eed8f1440d2540008d90fc36d51486b222112427b746038f046"
+  },
+  {
+   "path": "backend/verification/pytest_full.log",
+   "bytes": 99,
+   "sha256": "30d5a4de0178ec46cc2c09f847e88bac2ccdf78f099371cd975eb3afe3026d12"
+  },
+  {
+   "path": "backend/verification/pytest_release.log",
+   "bytes": 99,
+   "sha256": "bd3d038e43dc94739d8889efa2bcfe856cfa2cabfa168463909e53fafdea8bc0"
+  },
+  {
+   "path": "backend/verification/routing_incident_execution.log",
+   "bytes": 694,
+   "sha256": "3665204e316a3c642052f4c9474ff2feffcc4cca7652f363167aa442030f44dd"
+  },
+  {
+   "path": "backend/verification/sarima_pilot.log",
+   "bytes": 2065,
+   "sha256": "c0aadd52d2ab26618cdb402af0053946eebc9c3ca4d6c57d00bcdaf5f8e773cc"
+  },
+  {
+   "path": "backend/verification/sarima_pilot_rerun.log",
+   "bytes": 2065,
+   "sha256": "c0aadd52d2ab26618cdb402af0053946eebc9c3ca4d6c57d00bcdaf5f8e773cc"
+  },
+  {
+   "path": "backend/verification/uvicorn_live_http.log",
+   "bytes": 791,
+   "sha256": "d6128109be8eb9f8030914d5246547be47d775178150ffb3e08e5eeb881e81ff"
+  },
+  {
+   "path": "backend/verification/uvicorn_startup.log",
+   "bytes": 1539,
+   "sha256": "219a7d2f79b812cb63035de5fa8d93fab4238a8009ce403c33a9b00994d6861d"
+  },
+  {
+   "path": "backend/verification/v3/README.md",
+   "bytes": 1185,
+   "sha256": "68fae97ebbb7534804b5ed4dad9aedbd923d8a7073c0bf9c3ae20926f1284a16"
+  },
+  {
+   "path": "backend/verification/v3/browser_capture_a.log",
+   "bytes": 795,
+   "sha256": "5f1be5a2efb2feb6bfab8b5419236f08bd01010fdc5fd87041cd979e4419098a"
+  },
+  {
+   "path": "backend/verification/v3/browser_capture_b.log",
+   "bytes": 552,
+   "sha256": "2cffecc211ee20966cf1adc8f81fd13adbf4cf54f6d38601177130c5c777812b"
+  },
+  {
+   "path": "backend/verification/v3/browser_capture_c.log",
+   "bytes": 504,
+   "sha256": "9dc4bc8c34d0eefaa467ec2b185fc43e9ded734407e422a170ad59b94b0a959a"
+  },
+  {
+   "path": "backend/verification/v3/browser_click_test.log",
+   "bytes": 336,
+   "sha256": "a49e7e46eccc5b7fb98dfcff1605f9152527ec197dcd47bdc58a09b830420488"
+  },
+  {
+   "path": "backend/verification/v3/compileall_v3.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "backend/verification/v3/pytest_v3.log",
+   "bytes": 5904,
+   "sha256": "455fe50ae3853b50d08caaf7cc15b7bd655f85eb75acab25d53d6a8cedea915d"
+  },
+  {
+   "path": "backend/verification/v3/pytest_v3_verbose.log",
+   "bytes": 6329,
+   "sha256": "aaea4dd3529c0875a35c25b53d41f67aaf402e32332ce78abd2ec4e3134a9ff3"
+  },
+  {
+   "path": "backend/verification/v3/requirements.linux-py312.freeze.txt",
+   "bytes": 1533,
+   "sha256": "1d4d218bd2d9b420a56506d00ec991936577cd986f31d621c4fd305baaa1c3a1"
+  },
+  {
+   "path": "backend/verification/v3/requirements.windows-cp314.resolved.txt",
+   "bytes": 5420,
+   "sha256": "edc608ff9f449491fbe2255e96c535a871f37278e265ca424ecb772598de028f"
+  },
+  {
+   "path": "backend/xgb_test.json",
+   "bytes": 1739,
+   "sha256": "5435110a4185e7c9ec086bc61503837648f8a5a62105efbf90e963f119f4f079"
+  },
+  {
+   "path": "backend/xgboost_roundtrip_test.joblib",
+   "bytes": 120261,
+   "sha256": "62310ef328c5d0f527e12e21ffbd03130fc41eb266dc44cb094034a4c2e04859"
+  },
+  {
+   "path": "docs/API_INTEGRATION_MAP.md",
+   "bytes": 3718,
+   "sha256": "34d79521846ee50580cea86f187bc8391242af491452752c2929d2fea54f2416"
+  },
+  {
+   "path": "docs/DATA_PROVENANCE.md",
+   "bytes": 1569,
+   "sha256": "81fd5a1c8e9c4273418c0a196efaa35335735625b7156efab63ca5d653e83bb2"
+  },
+  {
+   "path": "docs/HERE_SETUP.md",
+   "bytes": 3198,
+   "sha256": "4e96d646ff439ff8574a23aedeb56c4b851ea5e5403cb0446dc19f668b2c736c"
+  },
+  {
+   "path": "docs/INCIDENT_AWARE_ROUTING.md",
+   "bytes": 3410,
+   "sha256": "3b7f8a5c9ca043656a801d84f515b5d5e84fb956dfdff35c93b0476c3b32538a"
+  },
+  {
+   "path": "docs/INTEGRATION_AND_VERIFICATION_REPORT.md",
+   "bytes": 6943,
+   "sha256": "a81116c752c330860570620e105c5857c257543d6e0baf75b9de9d53a85be63f"
+  },
+  {
+   "path": "docs/LIVE_INCIDENTS.md",
+   "bytes": 8359,
+   "sha256": "ea15e9afa8937cee6874b91b9f45cc91546e98c157c1546a8bd30cbd10128ad1"
+  },
+  {
+   "path": "docs/TEST_RESULTS_ROUTING_UPDATE.md",
+   "bytes": 3602,
+   "sha256": "d172c75234e83a86fcb83f7c0dadda2e8c29ce194ad8c7fdaafd9aac6e55174f"
+  },
+  {
+   "path": "docs/verification/backend_pytest_py312.log",
+   "bytes": 220,
+   "sha256": "027c1190e61cbe03174bf0eb9f485bdc78e1605fba182afcb948dcb7a00cc2ff"
+  },
+  {
+   "path": "docs/verification/backend_pytest_py314.log",
+   "bytes": 258,
+   "sha256": "56866dbfe18668834eac2e1ba31459f54b542cf9cf123e47f3bfe161b54fb0ee"
+  },
+  {
+   "path": "docs/verification/e2e_browser_result.json",
+   "bytes": 25686,
+   "sha256": "3dce502f3f39333f9f3ef18658448e5b57ce97ed1066a3d4af0d3cc40ac0ef4d"
+  },
+  {
+   "path": "docs/verification/e2e_browser_run.log",
+   "bytes": 2473,
+   "sha256": "29a505b8269274dfd07640358e20b1ee7a230e7ec5b2470d60dd2410e2af200e"
+  },
+  {
+   "path": "docs/verification/environment.txt",
+   "bytes": 1650,
+   "sha256": "66fa33bd6e1e76af827c025a2c0068fe6b44c61c52b6ac3a9cead701f152ed1e"
+  },
+  {
+   "path": "docs/verification/frontend_build.log",
+   "bytes": 704,
+   "sha256": "d6f01388f8632d442a81c2c99f625c1c986a8315ee8fbc4e12b31fe9b206e067"
+  },
+  {
+   "path": "docs/verification/frontend_lint.log",
+   "bytes": 18,
+   "sha256": "5cdfd2f8ae98e85cf2d8c4aace1038fa53631f44df11ba7798fc0115f901f9d8"
+  },
+  {
+   "path": "docs/verification/frontend_typecheck.log",
+   "bytes": 43,
+   "sha256": "63a9ac132ac0bedeafba58ee2d66cb45e51a9a02ba46722f7c0c76e6af222289"
+  },
+  {
+   "path": "docs/verification/screenshots/01_overview.png",
+   "bytes": 186203,
+   "sha256": "2323b4f393065f4111797977012e4e5d9866fdd561b94ac8fe78ab9cd4e628f8"
+  },
+  {
+   "path": "docs/verification/screenshots/02_traffic_map.png",
+   "bytes": 172141,
+   "sha256": "066b0aedff132b5c31f055c70ff8ce8639835acf050c2fe2d0a2b67e56dd506d"
+  },
+  {
+   "path": "docs/verification/screenshots/03_prediction.png",
+   "bytes": 191915,
+   "sha256": "d354c94a72eae10da89a2ddf08f1ec2777172bdf25c00c76dc79fb5e8bd86955"
+  },
+  {
+   "path": "docs/verification/screenshots/04_forecasting.png",
+   "bytes": 149054,
+   "sha256": "ff8648c3b61901d889da6e839d8293ec7692d67ab9e3961479e65a72e94b3ba9"
+  },
+  {
+   "path": "docs/verification/screenshots/05_route_result.png",
+   "bytes": 186608,
+   "sha256": "3029039095e64e865e482a1ffd3e7fd72149e46ed94a1e6f1109648bb6063185"
+  },
+  {
+   "path": "docs/verification/screenshots/06_incident_created.png",
+   "bytes": 136868,
+   "sha256": "09ad3cc5788a523e2f01b49d9a3af20d32ede8d113881ef6122745b66f0799de"
+  },
+  {
+   "path": "docs/verification/screenshots/07_weather_simulated.png",
+   "bytes": 153085,
+   "sha256": "615f21509707ea119692fbbf8d8c8f582f7f6d726ff950a296401bde6aafa753"
+  },
+  {
+   "path": "docs/verification/screenshots/08_copilot.png",
+   "bytes": 190215,
+   "sha256": "a2cd0a31a2dd5a67e4b8efffd1f865616ea34d0a5aef5b4067114a210139cded"
+  },
+  {
+   "path": "docs/verification/screenshots/09_model_evaluation.png",
+   "bytes": 183485,
+   "sha256": "7a5b04b971148d39fd7bd45f43770bdb9cfc8398ff0afd77a492d24fd41e5b34"
+  },
+  {
+   "path": "docs/verification/screenshots/10_backend_down.png",
+   "bytes": 133549,
+   "sha256": "36317422894bee976b4b30114d9e5425db15d8415057df3cd888436e3f707df2"
+  },
+  {
+   "path": "docs/verification/screenshots/mobile_route.png",
+   "bytes": 67170,
+   "sha256": "14412af8cc825ecf804a0f89530ff2c129a613bd04f547e7d4d4e60b7dd11e99"
+  },
+  {
+   "path": "docs/verification/smoke_test_api_py314.log",
+   "bytes": 1386,
+   "sha256": "c887941b38373d7fcf70576c4171e9d266ec12301c57d240e7417374edea9d94"
+  },
+  {
+   "path": "frontend/.env.example",
+   "bytes": 436,
+   "sha256": "37681dbd021d54d128bdf588ab721c63fe8daef3062ed0fb95d2da7033b8c6ef"
+  },
+  {
+   "path": "frontend/.gitignore",
+   "bytes": 220,
+   "sha256": "6ae83bdb0e630c92f89f974c893b6cddd9490371a50a59b04080da0c2ccef422"
+  },
+  {
+   "path": "frontend/eslint.config.js",
+   "bytes": 739,
+   "sha256": "fa3cc12579fb0ef678a3153b31ec396d81ef2fec284a1a5ecb779c0ff336cfe0"
+  },
+  {
+   "path": "frontend/index.html",
+   "bytes": 638,
+   "sha256": "7ea6f1b120c14cd8aae6bbfd0933051026ee495e8ba6b97b8ba985b4f8fdc8ab"
+  },
+  {
+   "path": "frontend/package-lock.json",
+   "bytes": 212682,
+   "sha256": "5fbdae2d5c64e8836ce418600a3d7e3a231cfad9ece7b10b97a01779acbe9e95"
+  },
+  {
+   "path": "frontend/package.json",
+   "bytes": 1209,
+   "sha256": "9e27e50bb8b28141a7a83774d770c7f5d60c334483db8378d99299cd6a71b31c"
+  },
+  {
+   "path": "frontend/postcss.config.js",
+   "bytes": 81,
+   "sha256": "e32657baf631d7c5f4dc67b4b2ee0ec8e7d5b3c41860e09cddce7c0377cd80bc"
+  },
+  {
+   "path": "frontend/src/App.tsx",
+   "bytes": 1561,
+   "sha256": "5a02b86be0ee734f1aa141800b5de208474752f084ac60cf6e6b7d7cc736dc62"
+  },
+  {
+   "path": "frontend/src/components/charts/ChartContainer.tsx",
+   "bytes": 597,
+   "sha256": "cec0d37adec0bc8030486048afdb4beff4250d68c292ce1e7c289b3fc0e0b194"
+  },
+  {
+   "path": "frontend/src/components/charts/index.tsx",
+   "bytes": 3249,
+   "sha256": "c8bf4c33c7f78b02324d23dd79e716d2ae04eb4ac49757597a601f6c5139a417"
+  },
+  {
+   "path": "frontend/src/components/layout/AppLayout.tsx",
+   "bytes": 1192,
+   "sha256": "3c877dd2b4c4c60d623c2f4e63966cffd9735db571b5d5c04c49ada633d8feb0"
+  },
+  {
+   "path": "frontend/src/components/layout/Sidebar.tsx",
+   "bytes": 3802,
+   "sha256": "ea0b1104589d2f2e1ee6f2c9afe083be83fb2ef5be871fe06a10dd917bf66125"
+  },
+  {
+   "path": "frontend/src/components/layout/Topbar.tsx",
+   "bytes": 2247,
+   "sha256": "9e9eed437c4b8f404c0784eae81735c641a3e4cd776d416998c31df49fb6f98c"
+  },
+  {
+   "path": "frontend/src/components/map/TrafficMap.tsx",
+   "bytes": 4567,
+   "sha256": "ccf521e0c55b8f9aee7ffc9429a9818ba935dea62c2979e0fbb358d002906b3d"
+  },
+  {
+   "path": "frontend/src/components/ui/Badge.tsx",
+   "bytes": 1560,
+   "sha256": "f8771d8b519708fc93cbd643c64bb3fd3d1eedc73762c90203e05253d27e786a"
+  },
+  {
+   "path": "frontend/src/components/ui/Button.tsx",
+   "bytes": 1275,
+   "sha256": "feacaaa18b910bee334a5d923db803e7d52b30b8b6eb5f07ae821c21379264a4"
+  },
+  {
+   "path": "frontend/src/components/ui/Card.tsx",
+   "bytes": 2057,
+   "sha256": "f119b6fc4e8732933851ae3bcdfadbb4d97d962692f2139678c6a4b7739b87f8"
+  },
+  {
+   "path": "frontend/src/components/ui/PageHeader.tsx",
+   "bytes": 829,
+   "sha256": "494bb6074347545a73cafaad55213ae7ea6e7522ed89b02ebf783aaeb7cfe2b1"
+  },
+  {
+   "path": "frontend/src/components/ui/Provenance.tsx",
+   "bytes": 5707,
+   "sha256": "0f9c8d6b7c68eca540568fab19ea283a49b4fcbb30e289c5ebc969978db96166"
+  },
+  {
+   "path": "frontend/src/components/ui/Select.tsx",
+   "bytes": 1941,
+   "sha256": "acc24f217a4e38fa1527d49f2b14206d5532730f0b8f6713680cdea836033751"
+  },
+  {
+   "path": "frontend/src/components/ui/States.tsx",
+   "bytes": 1821,
+   "sha256": "b262a49b32db4422cd16b7578db25bbb8c9c8ae2e4b1375b64e982f159399e45"
+  },
+  {
+   "path": "frontend/src/index.css",
+   "bytes": 1495,
+   "sha256": "864788646355ff085e29a81a1d205c4518a94b1c218f996470edb1e41032ac08"
+  },
+  {
+   "path": "frontend/src/lib/api.ts",
+   "bytes": 7279,
+   "sha256": "7e2c85938b8be78db08eaf7a198b6e947b9fea6a4e43f3da9f655952abc1d2c1"
+  },
+  {
+   "path": "frontend/src/lib/incidentStatus.test.ts",
+   "bytes": 4056,
+   "sha256": "eb2beb27329616a28ce56bf5497e59b61859e71f37c058f179144e979986a0f5"
+  },
+  {
+   "path": "frontend/src/lib/incidentStatus.ts",
+   "bytes": 5665,
+   "sha256": "59911e54ac1038373852f6c121113508ba08a5a52034599434f427a90d6b675f"
+  },
+  {
+   "path": "frontend/src/lib/locations.ts",
+   "bytes": 631,
+   "sha256": "644811a8c2534a60687202a1294c56276f10118158a0bdefbbd6b4d220412f4c"
+  },
+  {
+   "path": "frontend/src/lib/predictions.ts",
+   "bytes": 192,
+   "sha256": "26313c0039b9431744fec1ceef13f0a95cd178fca86b485675c32876aefd645b"
+  },
+  {
+   "path": "frontend/src/lib/useApi.ts",
+   "bytes": 1222,
+   "sha256": "18e9dfd3b53020544bdf165a29165999262e07a1346098a3ab7dd6308ff4bbff"
+  },
+  {
+   "path": "frontend/src/lib/useIncidentFeed.test.tsx",
+   "bytes": 6160,
+   "sha256": "56cbfc47718f76595fdc1c938a5bccb4b9db27d6e0088ecafa8e5bbe668bcfc0"
+  },
+  {
+   "path": "frontend/src/lib/useIncidentFeed.ts",
+   "bytes": 4982,
+   "sha256": "49287eff5eff9f836a49bbecd3b74e551e8b610c4bb9b9785c118fab2a88d2b8"
+  },
+  {
+   "path": "frontend/src/lib/useRoadLayer.ts",
+   "bytes": 1759,
+   "sha256": "a458afb9df652e6dcd8e087d23d5fef295c72ff9990b83b0d713f7bc2ec26ca2"
+  },
+  {
+   "path": "frontend/src/lib/utils.ts",
+   "bytes": 1695,
+   "sha256": "a6165fb8f2ff20c4aeaac8a14568ae2480be9d5843bc9b11fd7d841b8466cf26"
+  },
+  {
+   "path": "frontend/src/main.tsx",
+   "bytes": 270,
+   "sha256": "0ed53eef5b1316873e4ff710790588bdb2d4e1649372990e425731e1219e466f"
+  },
+  {
+   "path": "frontend/src/pages/AITrafficCopilot.tsx",
+   "bytes": 18972,
+   "sha256": "321ab46481a60d7b67aa247f0655a1c9896246a126fd54074110a4dd93e87ee4"
+  },
+  {
+   "path": "frontend/src/pages/ExecutiveOverview.tsx",
+   "bytes": 9008,
+   "sha256": "f02a22b354932f3a97c023ce8f11df2ccaef03b2c61626f1cf78162c4b1c43dc"
+  },
+  {
+   "path": "frontend/src/pages/ForecastingAnalytics.tsx",
+   "bytes": 6971,
+   "sha256": "95f0007823d0e17d824dcb07b3c2312c19dfe5caa1977ee1a4ab120b2b5e1ac7"
+  },
+  {
+   "path": "frontend/src/pages/IncidentManagement.test.tsx",
+   "bytes": 13767,
+   "sha256": "b60632695f985b972060579aa73c3d78f2adfc5381cedd0d648ba2356d454870"
+  },
+  {
+   "path": "frontend/src/pages/IncidentManagement.tsx",
+   "bytes": 30464,
+   "sha256": "0e05debc4634f13adf18c5193253d597e07dd96d66280d097d7fa134f782f995"
+  },
+  {
+   "path": "frontend/src/pages/ModelEvaluation.tsx",
+   "bytes": 10007,
+   "sha256": "7532e42f3a8025249511f07e69a1404896731d09b0048afe8caa778e3d7f2383"
+  },
+  {
+   "path": "frontend/src/pages/SmartRoutePlanner.tsx",
+   "bytes": 42051,
+   "sha256": "a0b8799cfc146764f70e8b4e3e2dc861c0ce750fee4fc07d47160cb8ced7e4dc"
+  },
+  {
+   "path": "frontend/src/pages/TrafficMap.tsx",
+   "bytes": 14360,
+   "sha256": "0d322e64fe6177df4247b9d794ac999f3f22a48367e76306f4e70f4cc669d5c9"
+  },
+  {
+   "path": "frontend/src/pages/TrafficPrediction.tsx",
+   "bytes": 7766,
+   "sha256": "1c6535f1f1b70facef5d132c8247a0f2ca38964255b585212abc6c598d343b27"
+  },
+  {
+   "path": "frontend/src/pages/WeatherIntelligence.tsx",
+   "bytes": 6608,
+   "sha256": "f665232933507bf33110150095dfe072532b95fc3fc735fc584e9d60bfab399f"
+  },
+  {
+   "path": "frontend/src/test/fixtures.ts",
+   "bytes": 3546,
+   "sha256": "2efe5a7b885bd51f992f34bc20065872cd492125c1c1503736b4f30e2a87ad41"
+  },
+  {
+   "path": "frontend/src/types/index.ts",
+   "bytes": 21422,
+   "sha256": "d46e7597beb87f2c84facdfc820f33cb045bbc128d2918c02018008bce86d731"
+  },
+  {
+   "path": "frontend/src/vite-env.d.ts",
+   "bytes": 38,
+   "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+   "path": "frontend/tailwind.config.js",
+   "bytes": 1420,
+   "sha256": "e55efe2730be176afaa6d976edfa93cc43a7c63970b8f97a9742a95d494b4c32"
+  },
+  {
+   "path": "frontend/tsconfig.app.json",
+   "bytes": 709,
+   "sha256": "041e9c9280e4cc4bb8d533003fd7b1caefa0e9d1d1eab577a9ab85d7aab29b8e"
+  },
+  {
+   "path": "frontend/tsconfig.json",
+   "bytes": 119,
+   "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+  },
+  {
+   "path": "frontend/tsconfig.node.json",
+   "bytes": 481,
+   "sha256": "a96b9ba5e40d95b92adf56431fdf9cbe25b5c2557621f0666615bff6889dfc50"
+  },
+  {
+   "path": "frontend/vite.config.ts",
+   "bytes": 833,
+   "sha256": "e368dcb409072c7c365153639ddc6faf00d01dc21b97e47305611bd1f4dc9788"
+  },
+  {
+   "path": "scripts/download_osm.bat",
+   "bytes": 234,
+   "sha256": "a3dd0c9a7accdd77996bea229e9f77c38dd756299f51cf0b1b8f288d9a8845b2"
+  },
+  {
+   "path": "scripts/generate_release_manifest.py",
+   "bytes": 1491,
+   "sha256": "ccff3d87ac5bbdb46be396f0bc9b5b2ee08c9ca4e8ce02fe057133afa2ca20ec"
+  },
+  {
+   "path": "scripts/run_tests.bat",
+   "bytes": 387,
+   "sha256": "04eaed3d47ead21354280ee98f5a6dfc4d3ffedd9ef16ca87255aa32693f5db5"
+  },
+  {
+   "path": "scripts/smoke_test_api.py",
+   "bytes": 7053,
+   "sha256": "fba421df1b98397ec9df81c0e63257139f27f27d88be90f5be0da516a0be7578"
+  },
+  {
+   "path": "scripts/verify_release.py",
+   "bytes": 1560,
+   "sha256": "f660958a979d3647a544ec7751af2107d4a41063060c4e2193ce21f05ea6040e"
+  },
+  {
+   "path": "setup_windows.bat",
+   "bytes": 1939,
+   "sha256": "9e0fc70a2059031e8faf8bc98f1c504fbb2e0717837e04c6a84bf39f91688e5f"
+  },
+  {
+   "path": "start_backend.bat",
+   "bytes": 978,
+   "sha256": "4cc8b2b9d26dfa283be949eb098c4e50da8f293ede1e33a4588e26aef028a41e"
+  },
+  {
+   "path": "start_frontend.bat",
+   "bytes": 488,
+   "sha256": "04113c2c92143236ff58d072057e89097dc3618151107b01c8c027968f870c32"
+  },
+  {
+   "path": "start_project.bat",
+   "bytes": 930,
+   "sha256": "43ecb2f73af936e9ba58494ec118a175c2b6132be2fe453e1707eef11d685f21"
+  },
+  {
+   "path": "tests/e2e/e2e.mjs",
+   "bytes": 15087,
+   "sha256": "09f27b4f476f037812370f70067714afc29ff345d9ba9ebe2805c14d10171ca7"
+  },
+  {
+   "path": "tests/e2e/package-lock.json",
+   "bytes": 653,
+   "sha256": "3c99b78890b93fe3ae397cd0e148c1843ebfb34457c1b96cd92a8262af62e5f8"
+  },
+  {
+   "path": "tests/e2e/package.json",
+   "bytes": 171,
+   "sha256": "e98b65076955849d3089b37a2ba2b1dbae5143dc756e68c20839aa531f767b17"
+  }
+ ]
+}

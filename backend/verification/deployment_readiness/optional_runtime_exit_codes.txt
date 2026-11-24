@@ -1,0 +1,2 @@
+pip_install_exit=1
+streamlit_launch_exit=1

@@ -1,0 +1,1382 @@
+[
+  {
+    "method": "GET",
+    "path": "/",
+    "status": 200,
+    "body": {
+      "message": "Traffic Bottleneck Prediction & Smart Routing API",
+      "docs": "/docs",
+      "health": "/health"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/health",
+    "status": 200,
+    "body": {
+      "status": "ok",
+      "service": "traffic-bottleneck-api",
+      "version": "2.0.0",
+      "classifier_available": true,
+      "forecast_artifacts_available": true,
+      "road_network_loaded": false,
+      "openai_enabled": false,
+      "tomtom_enabled": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/locations",
+    "status": 200,
+    "body": {
+      "locations": [
+        "Airport Road",
+        "Bus Stand",
+        "City Center",
+        "Hospital Road",
+        "IT Park",
+        "Market Square",
+        "Old Town",
+        "Railway Station",
+        "School Zone",
+        "Tech Hub"
+      ],
+      "source": "synthetic_bhubaneswar_dataset",
+      "is_live": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/traffic/current",
+    "status": 200,
+    "body": {
+      "status": "ok",
+      "source": "synthetic_bhubaneswar_dataset",
+      "is_live": false,
+      "data_timestamp": "2023-03-14T21:30:00",
+      "notice": "This is the latest timestamp in the bundled synthetic dataset, not current live road traffic.",
+      "locations": [
+        {
+          "location": "Airport Road",
+          "vehicle_count": 684,
+          "avg_speed": 73.5,
+          "rainfall": 0.0,
+          "clouds": 43,
+          "temperature": 28.9,
+          "congestion_label": "Medium"
+        },
+        {
+          "location": "Bus Stand",
+          "vehicle_count": 523,
+          "avg_speed": 44.3,
+          "rainfall": 0.0,
+          "clouds": 35,
+          "temperature": 28.5,
+          "congestion_label": "Medium"
+        },
+        {
+          "location": "City Center",
+          "vehicle_count": 630,
+          "avg_speed": 45.2,
+          "rainfall": 0.0,
+          "clouds": 28,
+          "temperature": 28.9,
+          "congestion_label": "Medium"
+        },
+        {
+          "location": "Hospital Road",
+          "vehicle_count": 294,
+          "avg_speed": 36.6,
+          "rainfall": 0.0,
+          "clouds": 22,
+          "temperature": 31.2,
+          "congestion_label": "Medium"
+        },
+        {
+          "location": "IT Park",
+          "vehicle_count": 395,
+          "avg_speed": 51.6,
+          "rainfall": 0.0,
+          "clouds": 18,
+          "temperature": 30.7,
+          "congestion_label": "Medium"
+        },
+        {
+          "location": "Market Square",
+          "vehicle_count": 220,
+          "avg_speed": 41.3,
+          "rainfall": 0.0,
+          "clouds": 27,
+          "temperature": 29.5,
+          "congestion_label": "Low"
+        },
+        {
+          "location": "Old Town",
+          "vehicle_count": 220,
+          "avg_speed": 27.6,
+          "rainfall": 0.0,
+          "clouds": 40,
+          "temperature": 31.2,
+          "congestion_label": "Medium"
+        },
+        {
+          "location": "Railway Station",
+          "vehicle_count": 554,
+          "avg_speed": 54.5,
+          "rainfall": 0.0,
+          "clouds": 32,
+          "temperature": 33.4,
+          "congestion_label": "Medium"
+        },
+        {
+          "location": "School Zone",
+          "vehicle_count": 146,
+          "avg_speed": 26.2,
+          "rainfall": 0.0,
+          "clouds": 11,
+          "temperature": 29.5,
+          "congestion_label": "Low"
+        },
+        {
+          "location": "Tech Hub",
+          "vehicle_count": 573,
+          "avg_speed": 60.6,
+          "rainfall": 0.0,
+          "clouds": 10,
+          "temperature": 30.1,
+          "congestion_label": "Medium"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/traffic/predictions",
+    "status": 200,
+    "body": {
+      "predictions": [
+        {
+          "location": "Airport Road",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 1,
+          "predicted_congestion": "Medium",
+          "class_probabilities": {
+            "Low": 0.02418179853097866,
+            "Medium": 0.9758182014690213,
+            "High": 0.0
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 684.0,
+            "lag_avg_speed": 73.5,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 43.0,
+            "lag_temperature": 28.9
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        },
+        {
+          "location": "Bus Stand",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 1,
+          "predicted_congestion": "Medium",
+          "class_probabilities": {
+            "Low": 0.2887338172401573,
+            "Medium": 0.7112661827598431,
+            "High": 0.0
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 523.0,
+            "lag_avg_speed": 44.3,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 35.0,
+            "lag_temperature": 28.5
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        },
+        {
+          "location": "City Center",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 1,
+          "predicted_congestion": "Medium",
+          "class_probabilities": {
+            "Low": 0.048850981102589036,
+            "Medium": 0.9511490188974109,
+            "High": 0.0
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 630.0,
+            "lag_avg_speed": 45.2,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 28.0,
+            "lag_temperature": 28.9
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        },
+        {
+          "location": "Hospital Road",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 0,
+          "predicted_congestion": "Low",
+          "class_probabilities": {
+            "Low": 0.9430613687889078,
+            "Medium": 0.056938631211092265,
+            "High": 0.0
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 294.0,
+            "lag_avg_speed": 36.6,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 22.0,
+            "lag_temperature": 31.2
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        },
+        {
+          "location": "IT Park",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 1,
+          "predicted_congestion": "Medium",
+          "class_probabilities": {
+            "Low": 0.1592173148097772,
+            "Medium": 0.8407826851902228,
+            "High": 0.0
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 395.0,
+            "lag_avg_speed": 51.6,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 18.0,
+            "lag_temperature": 30.7
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        },
+        {
+          "location": "Market Square",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 0,
+          "predicted_congestion": "Low",
+          "class_probabilities": {
+            "Low": 0.8363467520844339,
+            "Medium": 0.16088326122296726,
+            "High": 0.0027699866925990375
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 220.0,
+            "lag_avg_speed": 41.3,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 27.0,
+            "lag_temperature": 29.5
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        },
+        {
+          "location": "Old Town",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 0,
+          "predicted_congestion": "Low",
+          "class_probabilities": {
+            "Low": 0.8986163119840249,
+            "Medium": 0.09861370132337632,
+            "High": 0.0027699866925990375
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 220.0,
+            "lag_avg_speed": 27.6,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 40.0,
+            "lag_temperature": 31.2
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        },
+        {
+          "location": "Railway Station",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 1,
+          "predicted_congestion": "Medium",
+          "class_probabilities": {
+            "Low": 0.045493634310130524,
+            "Medium": 0.9545063656898697,
+            "High": 0.0
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 554.0,
+            "lag_avg_speed": 54.5,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 32.0,
+            "lag_temperature": 33.4
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        },
+        {
+          "location": "School Zone",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 0,
+          "predicted_congestion": "Low",
+          "class_probabilities": {
+            "Low": 0.985489810640646,
+            "Medium": 0.014510189359354135,
+            "High": 0.0
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 146.0,
+            "lag_avg_speed": 26.2,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 11.0,
+            "lag_temperature": 29.5
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        },
+        {
+          "location": "Tech Hub",
+          "origin_timestamp": "2023-03-14T21:30:00",
+          "prediction_timestamp": "2023-03-14T22:00:00",
+          "prediction_horizon_minutes": 30,
+          "predicted_class_id": 1,
+          "predicted_congestion": "Medium",
+          "class_probabilities": {
+            "Low": 0.15410532685634096,
+            "Medium": 0.845894673143659,
+            "High": 0.0
+          },
+          "input_measurements": {
+            "lag_vehicle_count": 573.0,
+            "lag_avg_speed": 60.6,
+            "lag_rainfall": 0.0,
+            "lag_clouds": 10.0,
+            "lag_temperature": 30.1
+          },
+          "model_name": "RandomForestClassifier",
+          "source": "synthetic_bhubaneswar_dataset",
+          "is_live": false,
+          "weather_input_source": "synthetic_historical_weather",
+          "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+        }
+      ],
+      "source": "synthetic_bhubaneswar_dataset",
+      "is_live": false
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/traffic/predict/Airport Road",
+    "status": 200,
+    "body": {
+      "location": "Airport Road",
+      "origin_timestamp": "2023-03-14T21:30:00",
+      "prediction_timestamp": "2023-03-14T22:00:00",
+      "prediction_horizon_minutes": 30,
+      "predicted_class_id": 1,
+      "predicted_congestion": "Medium",
+      "class_probabilities": {
+        "Low": 0.02418179853097866,
+        "Medium": 0.9758182014690213,
+        "High": 0.0
+      },
+      "input_measurements": {
+        "lag_vehicle_count": 684.0,
+        "lag_avg_speed": 73.5,
+        "lag_rainfall": 0.0,
+        "lag_clouds": 43.0,
+        "lag_temperature": 28.9
+      },
+      "model_name": "RandomForestClassifier",
+      "source": "synthetic_bhubaneswar_dataset",
+      "is_live": false,
+      "weather_input_source": "synthetic_historical_weather",
+      "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/traffic/predict/UNKNOWN LOCATION",
+    "status": 400,
+    "body": {
+      "detail": "Unknown location: UNKNOWN LOCATION"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/forecasts/Airport Road?horizon_minutes=30",
+    "status": 200,
+    "body": {
+      "location": "Airport Road",
+      "origin_timestamp": "2023-03-14T21:30:00",
+      "target_timestamp": "2023-03-14T22:00:00",
+      "horizon_minutes": 30,
+      "source": "synthetic_bhubaneswar_dataset",
+      "is_live": false,
+      "notice": "Forecast uses the last bundled synthetic historical observation; it is not a real-time traffic forecast.",
+      "vehicle_count": 428.69442932133364,
+      "avg_speed": 68.505306077803,
+      "predicted_congestion": "Medium",
+      "congestion_probabilities": {
+        "Low": 0.022352625282989053,
+        "Medium": 0.9776473747170109,
+        "High": 0.0
+      },
+      "forecast_model": "Random Forest Regressor + Random Forest Classifier"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/forecasts/Airport Road?horizon_minutes=60",
+    "status": 200,
+    "body": {
+      "location": "Airport Road",
+      "origin_timestamp": "2023-03-14T21:30:00",
+      "target_timestamp": "2023-03-14T22:30:00",
+      "horizon_minutes": 60,
+      "source": "synthetic_bhubaneswar_dataset",
+      "is_live": false,
+      "notice": "Forecast uses the last bundled synthetic historical observation; it is not a real-time traffic forecast.",
+      "vehicle_count": 428.2627854945257,
+      "avg_speed": 67.92215373828333,
+      "predicted_congestion": "Medium",
+      "congestion_probabilities": {
+        "Low": 0.019850432400863822,
+        "Medium": 0.9801495675991362,
+        "High": 0.0
+      },
+      "forecast_model": "Random Forest Regressor + Random Forest Classifier"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/forecasts/Airport Road?horizon_minutes=45",
+    "status": 400,
+    "body": {
+      "detail": "horizon_minutes must be 30 or 60"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/routing/nodes?limit=8",
+    "status": 200,
+    "body": {
+      "graph_source": "synthetic_fallback",
+      "is_real_road_geometry": false,
+      "nodes": [
+        {
+          "id": "1",
+          "name": "Fallback Central Junction",
+          "latitude": 20.2961,
+          "longitude": 85.8245
+        },
+        {
+          "id": "2",
+          "name": "Fallback North-West Junction",
+          "latitude": 20.3015,
+          "longitude": 85.8205
+        },
+        {
+          "id": "3",
+          "name": "Fallback North-East Junction",
+          "latitude": 20.3025,
+          "longitude": 85.833
+        },
+        {
+          "id": "4",
+          "name": "Fallback South-West Junction",
+          "latitude": 20.289,
+          "longitude": 85.8175
+        },
+        {
+          "id": "5",
+          "name": "Fallback South-East Junction",
+          "latitude": 20.2875,
+          "longitude": 85.8325
+        },
+        {
+          "id": "6",
+          "name": "Fallback North Junction",
+          "latitude": 20.31,
+          "longitude": 85.826
+        },
+        {
+          "id": "7",
+          "name": "Fallback South Junction",
+          "latitude": 20.2805,
+          "longitude": 85.825
+        },
+        {
+          "id": "8",
+          "name": "Fallback East Junction",
+          "latitude": 20.296,
+          "longitude": 85.839
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/routes/calculate",
+    "status": 200,
+    "body": {
+      "origin_node": "1",
+      "destination_node": "8",
+      "algorithm": "dijkstra",
+      "graph_source": "synthetic_fallback",
+      "route_count": 2,
+      "routes": [
+        {
+          "rank": 1,
+          "algorithm": "dijkstra",
+          "node_sequence": [
+            "1",
+            "3",
+            "8"
+          ],
+          "distance_km": 1.65,
+          "estimated_travel_time_min": 2.83,
+          "free_flow_estimate_min": 2.83,
+          "delay_vs_free_flow_min": 0.0,
+          "segments": [
+            {
+              "from_node": "1",
+              "to_node": "3",
+              "length_m": 950.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 1.63,
+              "incident_ids": [],
+              "highway": "primary"
+            },
+            {
+              "from_node": "3",
+              "to_node": "8",
+              "length_m": 700.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 1.2,
+              "incident_ids": [],
+              "highway": "tertiary"
+            }
+          ],
+          "polyline_latlon": [
+            [
+              20.2961,
+              85.8245
+            ],
+            [
+              20.3025,
+              85.833
+            ],
+            [
+              20.296,
+              85.839
+            ]
+          ],
+          "graph_source": "synthetic_fallback",
+          "is_real_road_geometry": false
+        },
+        {
+          "rank": 2,
+          "algorithm": "dijkstra",
+          "node_sequence": [
+            "1",
+            "5",
+            "8"
+          ],
+          "distance_km": 2.3,
+          "estimated_travel_time_min": 3.94,
+          "free_flow_estimate_min": 3.94,
+          "delay_vs_free_flow_min": 0.0,
+          "segments": [
+            {
+              "from_node": "1",
+              "to_node": "5",
+              "length_m": 1050.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 1.8,
+              "incident_ids": [],
+              "highway": "secondary"
+            },
+            {
+              "from_node": "5",
+              "to_node": "8",
+              "length_m": 1250.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 2.14,
+              "incident_ids": [],
+              "highway": "tertiary"
+            }
+          ],
+          "polyline_latlon": [
+            [
+              20.2961,
+              85.8245
+            ],
+            [
+              20.2875,
+              85.8325
+            ],
+            [
+              20.296,
+              85.839
+            ]
+          ],
+          "graph_source": "synthetic_fallback",
+          "is_real_road_geometry": false
+        }
+      ],
+      "active_incident_count": 0,
+      "origin_input": "1",
+      "destination_input": "8",
+      "departure_time": "2026-11-05T01:25:05.486620+05:30",
+      "departure_time_source": "Asia/Kolkata server-local default",
+      "estimated_arrival_time": "2026-11-05T01:27:55.286620+05:30",
+      "traffic_cost_mode": "free-flow-road-attributes-plus-incidents",
+      "notice": "OpenStreetMap provides road geometry/attributes, not live traffic speeds. Congestion costs are simulated unless a traffic provider is explicitly used."
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/routes/calculate",
+    "status": 200,
+    "body": {
+      "origin_node": "1",
+      "destination_node": "8",
+      "algorithm": "astar",
+      "graph_source": "synthetic_fallback",
+      "route_count": 2,
+      "routes": [
+        {
+          "rank": 1,
+          "algorithm": "astar",
+          "node_sequence": [
+            "1",
+            "3",
+            "8"
+          ],
+          "distance_km": 1.65,
+          "estimated_travel_time_min": 2.83,
+          "free_flow_estimate_min": 2.83,
+          "delay_vs_free_flow_min": 0.0,
+          "segments": [
+            {
+              "from_node": "1",
+              "to_node": "3",
+              "length_m": 950.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 1.63,
+              "incident_ids": [],
+              "highway": "primary"
+            },
+            {
+              "from_node": "3",
+              "to_node": "8",
+              "length_m": 700.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 1.2,
+              "incident_ids": [],
+              "highway": "tertiary"
+            }
+          ],
+          "polyline_latlon": [
+            [
+              20.2961,
+              85.8245
+            ],
+            [
+              20.3025,
+              85.833
+            ],
+            [
+              20.296,
+              85.839
+            ]
+          ],
+          "graph_source": "synthetic_fallback",
+          "is_real_road_geometry": false
+        },
+        {
+          "rank": 2,
+          "algorithm": "astar",
+          "node_sequence": [
+            "1",
+            "5",
+            "8"
+          ],
+          "distance_km": 2.3,
+          "estimated_travel_time_min": 3.94,
+          "free_flow_estimate_min": 3.94,
+          "delay_vs_free_flow_min": 0.0,
+          "segments": [
+            {
+              "from_node": "1",
+              "to_node": "5",
+              "length_m": 1050.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 1.8,
+              "incident_ids": [],
+              "highway": "secondary"
+            },
+            {
+              "from_node": "5",
+              "to_node": "8",
+              "length_m": 1250.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 2.14,
+              "incident_ids": [],
+              "highway": "tertiary"
+            }
+          ],
+          "polyline_latlon": [
+            [
+              20.2961,
+              85.8245
+            ],
+            [
+              20.2875,
+              85.8325
+            ],
+            [
+              20.296,
+              85.839
+            ]
+          ],
+          "graph_source": "synthetic_fallback",
+          "is_real_road_geometry": false
+        }
+      ],
+      "active_incident_count": 0,
+      "origin_input": "1",
+      "destination_input": "8",
+      "departure_time": "2026-11-05T01:25:05.489843+05:30",
+      "departure_time_source": "Asia/Kolkata server-local default",
+      "estimated_arrival_time": "2026-11-05T01:27:55.289843+05:30",
+      "traffic_cost_mode": "free-flow-road-attributes-plus-incidents",
+      "notice": "OpenStreetMap provides road geometry/attributes, not live traffic speeds. Congestion costs are simulated unless a traffic provider is explicitly used."
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/routes/calculate",
+    "status": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "value_error",
+          "loc": [
+            "body"
+          ],
+          "msg": "Value error, Provide exactly one endpoint pair: coordinates, names, or graph node IDs",
+          "input": {
+            "origin_node": "1",
+            "algorithm": "dijkstra"
+          },
+          "ctx": {
+            "error": {}
+          }
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/incidents",
+    "status": 200,
+    "body": {
+      "incidents": [],
+      "source_types": [
+        "manual",
+        "simulation",
+        "tomtom"
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/incidents",
+    "status": 201,
+    "body": {
+      "id": "6fe356e8-6310-4bae-8e28-b4ebcc39af7e",
+      "edge_u": "1",
+      "edge_v": "3",
+      "kind": "road_closure",
+      "severity": 1.0,
+      "source": "manual",
+      "created_at": "2026-11-04T19:55:05.495586+00:00",
+      "expires_at": "2026-11-04T20:55:05.495586+00:00",
+      "bidirectional": false,
+      "description": ""
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/incidents",
+    "status": 200,
+    "body": {
+      "incidents": [
+        {
+          "id": "6fe356e8-6310-4bae-8e28-b4ebcc39af7e",
+          "edge_u": "1",
+          "edge_v": "3",
+          "kind": "road_closure",
+          "severity": 1.0,
+          "source": "manual",
+          "created_at": "2026-11-04T19:55:05.495586+00:00",
+          "expires_at": "2026-11-04T20:55:05.495586+00:00",
+          "bidirectional": false,
+          "description": ""
+        }
+      ],
+      "source_types": [
+        "manual",
+        "simulation",
+        "tomtom"
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/routes/calculate",
+    "status": 200,
+    "body": {
+      "origin_node": "1",
+      "destination_node": "8",
+      "algorithm": "dijkstra",
+      "graph_source": "synthetic_fallback",
+      "route_count": 1,
+      "routes": [
+        {
+          "rank": 1,
+          "algorithm": "dijkstra",
+          "node_sequence": [
+            "1",
+            "5",
+            "8"
+          ],
+          "distance_km": 2.3,
+          "estimated_travel_time_min": 3.94,
+          "free_flow_estimate_min": 3.94,
+          "delay_vs_free_flow_min": 0.0,
+          "segments": [
+            {
+              "from_node": "1",
+              "to_node": "5",
+              "length_m": 1050.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 1.8,
+              "incident_ids": [],
+              "highway": "secondary"
+            },
+            {
+              "from_node": "5",
+              "to_node": "8",
+              "length_m": 1250.0,
+              "estimated_speed_kph": 35.0,
+              "congestion": "low",
+              "travel_time_min": 2.14,
+              "incident_ids": [],
+              "highway": "tertiary"
+            }
+          ],
+          "polyline_latlon": [
+            [
+              20.2961,
+              85.8245
+            ],
+            [
+              20.2875,
+              85.8325
+            ],
+            [
+              20.296,
+              85.839
+            ]
+          ],
+          "graph_source": "synthetic_fallback",
+          "is_real_road_geometry": false
+        }
+      ],
+      "active_incident_count": 1,
+      "origin_input": "1",
+      "destination_input": "8",
+      "departure_time": "2026-11-05T01:25:05.498379+05:30",
+      "departure_time_source": "Asia/Kolkata server-local default",
+      "estimated_arrival_time": "2026-11-05T01:29:01.898379+05:30",
+      "traffic_cost_mode": "free-flow-road-attributes-plus-incidents",
+      "notice": "OpenStreetMap provides road geometry/attributes, not live traffic speeds. Congestion costs are simulated unless a traffic provider is explicitly used."
+    }
+  },
+  {
+    "method": "DELETE",
+    "path": "/incidents/6fe356e8-6310-4bae-8e28-b4ebcc39af7e",
+    "status": 200,
+    "body": {
+      "removed": true,
+      "incident_id": "6fe356e8-6310-4bae-8e28-b4ebcc39af7e"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/incidents",
+    "status": 400,
+    "body": {
+      "detail": "Road graph node 'invalid' does not exist"
+    }
+  },
+  {
+    "method": "DELETE",
+    "path": "/incidents/not-a-real-id",
+    "status": 404,
+    "body": {
+      "detail": "Incident not found or already expired"
+    }
+  },
+  {
+    "method": "DELETE",
+    "path": "/incidents",
+    "status": 200,
+    "body": {
+      "removed_count": 0
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/weather/current",
+    "status": 200,
+    "body": {
+      "status": "unavailable",
+      "source": "none",
+      "is_live": false,
+      "is_simulated": false,
+      "error": "ConnectError: [Errno -3] Temporary failure in name resolution",
+      "message": "Open-Meteo is unavailable and simulated fallback was not enabled."
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/weather/current?allow_simulated_fallback=true&force_refresh=true",
+    "status": 200,
+    "body": {
+      "status": "simulated_fallback",
+      "source": "synthetic_weather_fallback",
+      "is_live": false,
+      "is_simulated": true,
+      "fetched_at": "2026-11-04T19:55:10.544630+00:00",
+      "observation_time": null,
+      "timezone": "Asia/Kolkata",
+      "latitude": 20.2961,
+      "longitude": 85.8245,
+      "temperature_c": 23.0,
+      "relative_humidity_pct": 73.8,
+      "precipitation_mm": 2.1,
+      "rain_mm": 2.2,
+      "showers_mm": 0.0,
+      "weather_code": null,
+      "cloud_cover_pct": 22.4,
+      "wind_speed_kmh": 14.7,
+      "wind_direction_deg": null,
+      "wind_gusts_kmh": null,
+      "units": {},
+      "cache_status": "not_cached",
+      "notice": "SIMULATED WEATHER: this is generated fallback data, not a live API result."
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/traffic/tomtom/flow",
+    "status": 200,
+    "body": {
+      "status": "disabled",
+      "source": "tomtom",
+      "is_live": false,
+      "message": "TOMTOM_API_KEY is not configured."
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/traffic/tomtom/incidents",
+    "status": 200,
+    "body": {
+      "status": "disabled",
+      "source": "tomtom",
+      "is_live": false,
+      "message": "TOMTOM_API_KEY is not configured."
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/traffic/tomtom/incidents?min_lon=86&max_lon=85",
+    "status": 400,
+    "body": {
+      "detail": "Invalid bounding box"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/routes/osrm?origin_lat=20.2961&origin_lon=85.8245&destination_lat=20.3015&destination_lon=85.8205",
+    "status": 502,
+    "body": {
+      "detail": "OSRM route request failed: ConnectError: [Errno -3] Temporary failure in name resolution"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/copilot/chat",
+    "status": 200,
+    "body": {
+      "answer": "I retrieved 10 location predictions from the Phase 1 model. 0 are classified High. These predictions use historical synthetic observations, not current live traffic.",
+      "tool_results": {
+        "predictions": [
+          {
+            "location": "Airport Road",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 1,
+            "predicted_congestion": "Medium",
+            "class_probabilities": {
+              "Low": 0.02418179853097866,
+              "Medium": 0.9758182014690213,
+              "High": 0.0
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 684.0,
+              "lag_avg_speed": 73.5,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 43.0,
+              "lag_temperature": 28.9
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          },
+          {
+            "location": "Bus Stand",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 1,
+            "predicted_congestion": "Medium",
+            "class_probabilities": {
+              "Low": 0.2887338172401573,
+              "Medium": 0.7112661827598431,
+              "High": 0.0
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 523.0,
+              "lag_avg_speed": 44.3,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 35.0,
+              "lag_temperature": 28.5
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          },
+          {
+            "location": "City Center",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 1,
+            "predicted_congestion": "Medium",
+            "class_probabilities": {
+              "Low": 0.048850981102589036,
+              "Medium": 0.9511490188974109,
+              "High": 0.0
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 630.0,
+              "lag_avg_speed": 45.2,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 28.0,
+              "lag_temperature": 28.9
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          },
+          {
+            "location": "Hospital Road",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 0,
+            "predicted_congestion": "Low",
+            "class_probabilities": {
+              "Low": 0.9430613687889078,
+              "Medium": 0.056938631211092265,
+              "High": 0.0
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 294.0,
+              "lag_avg_speed": 36.6,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 22.0,
+              "lag_temperature": 31.2
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          },
+          {
+            "location": "IT Park",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 1,
+            "predicted_congestion": "Medium",
+            "class_probabilities": {
+              "Low": 0.15921731480977722,
+              "Medium": 0.8407826851902229,
+              "High": 0.0
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 395.0,
+              "lag_avg_speed": 51.6,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 18.0,
+              "lag_temperature": 30.7
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          },
+          {
+            "location": "Market Square",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 0,
+            "predicted_congestion": "Low",
+            "class_probabilities": {
+              "Low": 0.8363467520844339,
+              "Medium": 0.16088326122296726,
+              "High": 0.0027699866925990375
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 220.0,
+              "lag_avg_speed": 41.3,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 27.0,
+              "lag_temperature": 29.5
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          },
+          {
+            "location": "Old Town",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 0,
+            "predicted_congestion": "Low",
+            "class_probabilities": {
+              "Low": 0.8986163119840249,
+              "Medium": 0.09861370132337632,
+              "High": 0.0027699866925990375
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 220.0,
+              "lag_avg_speed": 27.6,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 40.0,
+              "lag_temperature": 31.2
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          },
+          {
+            "location": "Railway Station",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 1,
+            "predicted_congestion": "Medium",
+            "class_probabilities": {
+              "Low": 0.045493634310130524,
+              "Medium": 0.9545063656898697,
+              "High": 0.0
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 554.0,
+              "lag_avg_speed": 54.5,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 32.0,
+              "lag_temperature": 33.4
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          },
+          {
+            "location": "School Zone",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 0,
+            "predicted_congestion": "Low",
+            "class_probabilities": {
+              "Low": 0.985489810640646,
+              "Medium": 0.014510189359354135,
+              "High": 0.0
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 146.0,
+              "lag_avg_speed": 26.2,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 11.0,
+              "lag_temperature": 29.5
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          },
+          {
+            "location": "Tech Hub",
+            "origin_timestamp": "2023-03-14T21:30:00",
+            "prediction_timestamp": "2023-03-14T22:00:00",
+            "prediction_horizon_minutes": 30,
+            "predicted_class_id": 1,
+            "predicted_congestion": "Medium",
+            "class_probabilities": {
+              "Low": 0.15410532685634093,
+              "Medium": 0.8458946731436588,
+              "High": 0.0
+            },
+            "input_measurements": {
+              "lag_vehicle_count": 573.0,
+              "lag_avg_speed": 60.6,
+              "lag_rainfall": 0.0,
+              "lag_clouds": 10.0,
+              "lag_temperature": 30.1
+            },
+            "model_name": "RandomForestClassifier",
+            "source": "synthetic_bhubaneswar_dataset",
+            "is_live": false,
+            "weather_input_source": "synthetic_historical_weather",
+            "notice": "Prediction is generated from synthetic source history; it is not a live traffic observation. If Open-Meteo weather was supplied, the model still has not been validated on real-world traffic."
+          }
+        ]
+      },
+      "mode": "rule_based"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/copilot/chat",
+    "status": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "body",
+            "message"
+          ],
+          "msg": "String should have at least 1 character",
+          "input": "",
+          "ctx": {
+            "min_length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/routing/nodes?limit=0",
+    "status": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "greater_than_equal",
+          "loc": [
+            "query",
+            "limit"
+          ],
+          "msg": "Input should be greater than or equal to 1",
+          "input": "0",
+          "ctx": {
+            "ge": 1
+          }
+        }
+      ]
+    }
+  }
+]

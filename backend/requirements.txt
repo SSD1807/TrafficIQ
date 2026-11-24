@@ -1,0 +1,33 @@
+# Exact pins = the versions the saved model artifacts were trained/exported with and the test suite was run against.
+# Windows (win_amd64) wheels for CPython 3.14 exist for every compiled package below (checked with `pip download --platform win_amd64 --python-version 3.14`).
+# Changing scikit-learn or xgboost REQUIRES retraining: run `python phase2_train.py` and `python -m forecasting.forecast_pipeline`.
+
+# Core data and machine learning
+pandas==3.0.6
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+joblib==1.6.0
+matplotlib==3.11.2
+seaborn==0.13.2
+statsmodels==0.15.0
+
+# Backend and external service clients
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.2
+httpx==0.28.1
+openai==3.46.0
+python-dotenv==1.2.4
+
+# Road network and map visualization
+osmnx==2.1.1
+networkx==3.7
+folium==0.20.0
+streamlit==1.66.1
+streamlit-folium==0.27.4
+plotly==7.1.0
+
+# QA
+pytest==9.2.0

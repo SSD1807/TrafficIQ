@@ -1,0 +1,13 @@
+{
+  "_note": "The traffic dataset is SYNTHETIC and its ten location names are generic archetypes. These coordinates are APPROXIMATE demo anchors placing each archetype in a plausible Bhubaneswar area so it can be drawn on the map. They are not surveyed sensor positions. Edit freely.",
+  "Bus Stand":        {"lat": 20.2808, "lon": 85.7981, "area": "Baramunda ISBT area (approx.)"},
+  "Market Square":    {"lat": 20.2720, "lon": 85.8400, "area": "Unit-1 / Ashok Nagar market area (approx.)"},
+  "Railway Station":  {"lat": 20.2644, "lon": 85.8434, "area": "Bhubaneswar Railway Station (approx.)"},
+  "Hospital Road":    {"lat": 20.2629, "lon": 85.8330, "area": "Capital Hospital area (approx.)"},
+  "Old Town":         {"lat": 20.2382, "lon": 85.8338, "area": "Lingaraj / Old Town (approx.)"},
+  "City Center":      {"lat": 20.2961, "lon": 85.8245, "area": "City centre reference point"},
+  "IT Park":          {"lat": 20.3500, "lon": 85.8200, "area": "Infocity / Patia area (approx.)"},
+  "Airport Road":     {"lat": 20.2530, "lon": 85.8170, "area": "Biju Patnaik Airport approach (approx.)"},
+  "School Zone":      {"lat": 20.3010, "lon": 85.8460, "area": "Nayapalli / Sailashree Vihar area (approx.)"},
+  "Tech Hub":         {"lat": 20.3320, "lon": 85.8180, "area": "Chandrasekharpur area (approx.)"}
+}

@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "source": "/home/claude/proj/traffic_bottleneck/dataset/bhubaneswar_synthetic_traffic.csv",
+    "domain": "synthetic Bhubaneswar data only",
+    "model": "SARIMAX(1,0,0) x (1,0,0,48)",
+    "evaluation": "rolling-origin holdout; fit on first 80% of each location series, predict 30 and 60 minutes from each origin, then append observed values without refitting",
+    "test_points_per_location": 24,
+    "warning": "SARIMA is a per-location univariate baseline and should be interpreted separately from shared panel regressors; this optional runner can be computationally expensive."
+  },
+  "results": {
+    "30m": {
+      "vehicle_count": {
+        "mae": 270.3204379301956,
+        "rmse": 302.8058183192048,
+        "smape_pct": 18.310773951082062,
+        "n": 24,
+        "locations": [
+          "Airport Road"
+        ],
+        "evaluation_type": "rolling-origin 1-step/2-step ahead; observed value appended after each origin without parameter refit"
+      },
+      "avg_speed": {
+        "mae": 9.225604793119215,
+        "rmse": 10.561706026525437,
+        "smape_pct": 17.499226159365026,
+        "n": 24,
+        "locations": [
+          "Airport Road"
+        ],
+        "evaluation_type": "rolling-origin 1-step/2-step ahead; observed value appended after each origin without parameter refit"
+      }
+    },
+    "60m": {
+      "vehicle_count": {
+        "mae": 287.60135075398006,
+        "rmse": 345.17453834228786,
+        "smape_pct": 19.322327573305422,
+        "n": 23,
+        "locations": [
+          "Airport Road"
+        ],
+        "evaluation_type": "rolling-origin 1-step/2-step ahead; observed value appended after each origin without parameter refit"
+      },
+      "avg_speed": {
+        "mae": 8.746323403871367,
+        "rmse": 10.140183695644192,
+        "smape_pct": 16.382428885783426,
+        "n": 23,
+        "locations": [
+          "Airport Road"
+        ],
+        "evaluation_type": "rolling-origin 1-step/2-step ahead; observed value appended after each origin without parameter refit"
+      }
+    }
+  }
+}
