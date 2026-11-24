@@ -78,7 +78,7 @@ cd frontend && cp .env.example .env && npm install && npm run dev               
 * Known data limit: only about 6 % of the road edges in the bundled cache carry an OSM `name`; other junctions are labelled
   "Near <road>" or by coordinates until reverse geocoding (Nominatim) can name them.
 
-## Live incident detection (TomTom) - new
+## Live incident detection (TomTom) 
 Real traffic incidents from the **TomTom Traffic Incident Details API (v5)** are fetched by the backend, matched to
 directed OpenStreetMap road edges and applied to routing (closures remove the edge, accidents/works/hazards add
 severity-scaled cost; Dijkstra and A* both honour them). Manual and simulated incidents keep working. Full details,
